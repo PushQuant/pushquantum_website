@@ -26,7 +26,7 @@ export function Footer() {
                         <Link href="/" className="text-xl font-bold text-foreground">
                             PushQuantum
                         </Link>
-                        <p className="mt-4 text-muted-foreground text-sm max-w-xs leading-relaxed">
+                        <p className="mt-4 text-sm max-w-xs leading-relaxed">
                             Exploring the quantum realm through collaboration, education and
                             innovation
                         </p>
@@ -60,7 +60,7 @@ export function Footer() {
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                        className="text-sm "
                                     >
                                         {link.label}
                                     </Link>
@@ -79,7 +79,7 @@ export function Footer() {
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                        className="text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -96,7 +96,7 @@ export function Footer() {
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                        className="text-sm"
                                     >
                                         {link.label}
                                     </Link>

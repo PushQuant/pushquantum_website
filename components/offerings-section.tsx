@@ -15,9 +15,9 @@ const offerings = [
 export function OfferingsSection() {
     return (
         <section className="relative min-h-[600px] bg-[#0a0a12] overflow-hidden">
-            {/* Background wave mesh image - positioned on the right */}
+            {/* Background wave mesh image - full width, no repeat */}
             <div
-                className="absolute inset-0 bg-no-repeat bg-right bg-contain pointer-events-none"
+                className="absolute inset-0 bg-no-repeat bg-center bg-cover pointer-events-none"
                 style={{ backgroundImage: "url('/offerings-bg.svg')" }}
             />
 
@@ -29,7 +29,7 @@ export function OfferingsSection() {
                     <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-[#e91e8c] via-[#e91e8c]/50 to-[#e91e8c]/20 blur-[2px]" />
 
                     {/* Card */}
-                    <div className="relative rounded-2xl bg-pq-dark-purple /90 backdrop-blur-sm border border-[#e91e8c]/30 p-8 lg:p-10">
+                    <div className="relative rounded-2xl bg-[#0d1033]/90 backdrop-blur-sm border border-[#e91e8c]/30 p-8 lg:p-10">
                         <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-8">
                             Our Offerings
                         </h2>

@@ -1,12 +1,14 @@
+
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-    { href: "#about", label: "About" },
+    { href: "/about", label: "About" },
     { href: "#events", label: "Events" },
     { href: "#projects", label: "Projects" },
     { href: "#members", label: "Members" },
@@ -18,11 +20,24 @@ export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md  bg-pq-light-purple">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-pq-light-purple backdrop-blur-md ">
             <div className="mx-auto max-w-7xl px-6 py-4">
                 <nav className="flex items-center justify-between">
-                    <Link href="/" className="text-xl font-bold text-foreground">
-                        PushQuantum
+                    <Link href="/" className="flex items-center gap-2">
+                        <Image
+                            src="/logos/pq/main_pq_logo_no_background.svg"
+                            alt=""
+                            width={32}
+                            height={32}
+                            className="h-8 w-auto"
+                        />
+                        <Image
+                            src="/logos/pq/Logo_pink_text.svg"
+                            alt="PushQuantum"
+                            width={120}
+                            height={24}
+                            className="h-5 w-auto"
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -67,7 +82,7 @@ export function Header() {
                                     {link.label}
                                 </Link>
                             ))}
-                            <Button className="rounded-full w-fit mt-2">Join Us</Button>
+                            <Button className="rounded-full w-fit mt-2 bg-pq-bright-pink">Join Us</Button>
                         </div>
                     </div>
                 )}
@@ -75,3 +90,4 @@ export function Header() {
         </header>
     );
 }
+
