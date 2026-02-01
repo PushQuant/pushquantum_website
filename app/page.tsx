@@ -8,18 +8,18 @@ import { CommunitySection } from "@/components/community-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <main>
-        <HeroSection />
-        <OfferingsSection />
-        <AboutSection />
-        <EventsSection />
-        <PartnersSection />
-        <CommunitySection />
-      </main>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <main>
+                <HeroSection />
+                <AboutSection />
+                <OfferingsSection />
+                <EventsSection />
+                <PartnersSection />
+                <CommunitySection />
+            </main>
+            <Footer />
+        </>
+    );
 }
