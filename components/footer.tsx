@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
+
     contributions: [
-        { label: "Membership", href: "#" },
+        { label: "Membership", href: "/members" },
         { label: "Partners", href: "#partners" },
     ],
     about: [
-        { label: "About", href: "#about" },
+        { label: "About", href: "/about" },
         { label: "Contact", href: "#contact" },
     ],
     legal: [
@@ -23,8 +25,21 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
                     {/* Brand */}
                     <div className="lg:col-span-2">
-                        <Link href="/" className="text-xl font-bold text-foreground">
-                            PushQuantum
+                        <Link href="/" className="flex items-center gap-2">
+                            <Image
+                                src="/logos/pq/main_pq_logo_no_background.svg"
+                                alt=""
+                                width={32}
+                                height={32}
+                                className="h-8 w-auto"
+                            />
+                            <Image
+                                src="/logos/pq/Logo_pink_text.svg"
+                                alt="PushQuantum"
+                                width={120}
+                                height={24}
+                                className="h-5 w-auto"
+                            />
                         </Link>
                         <p className="mt-4 text-sm max-w-xs leading-relaxed">
                             Exploring the quantum realm through collaboration, education and

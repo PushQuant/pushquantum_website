@@ -53,7 +53,7 @@ export function HeroSection() {
 
                     {/* RIGHT VISUAL */}
                     <div className="relative">
-                        <div className="relative w-full max-w-xl mx-auto">
+                        <div className="relative w-full max-w-xl mx-auto hidden lg:block">
                             <Image
                                 src="/logos/pq/artsy_pq_logo.svg"
                                 alt="Quantum abstract shape"
