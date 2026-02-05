@@ -6,11 +6,10 @@ const footerLinks = {
 
     contributions: [
         { label: "Membership", href: "/members" },
-        { label: "Partners", href: "#partners" },
     ],
     about: [
         { label: "About", href: "/about" },
-        { label: "Contact", href: "#contact" },
+        { label: "Contact", href: "/contact" },
     ],
     legal: [
         { label: "Imprint", href: "#" },
