@@ -35,12 +35,12 @@ export function AboutSection() {
                         </div>
 
                         <Link
-                            href="#"
+                            href="/about"
                             className="inline-flex items-center gap-2 mt-8 text-primary hover:underline font-medium"
                         >
                             <button className="rounded-full px-7 py-3 text-sm font-semibold text-white transition border border-pq-dark-purple hover:bg-pink-400">
                                 <p className="text-pq-dark-purple">
-                                    Out Story
+                                    Our Story
                                 </p>
                             </button>
 
