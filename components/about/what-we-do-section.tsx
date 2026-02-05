@@ -23,9 +23,9 @@ export function WhatWeDoSection() {
     return (
         <section className="py-20 px-6 bg-[#f3f4f6]">
             <div className="mx-auto max-w-7xl">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10">
                     {/* Left - Title and Description */}
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-center lg:items-start">
                         <h2 className="text-4xl font-bold text-[#1a1a2e] sm:text-5xl lg:text-6xl">
                             What We Do
                         </h2>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutHero() {
     return (
-        <section className="relative py-40 bg-pq-light-purple overflow-hidden">
+        <section className="relative py-24 bg-pq-light-purple overflow-hidden">
             {/* Background quantum orbital graphic - positioned on the right */}
             <div className="absolute right-[+5%] top-1/2 -translate-y-1/2 w-[800px] h-[800px] lg:w-[1000px] lg:h-[1000px] opacity-40">
                 <Image
