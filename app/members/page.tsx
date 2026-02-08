@@ -16,15 +16,11 @@ export const metadata: Metadata = {
 export default function MembershipPage() {
     return (
         <>
-            <Header />
-            <main>
-                <MembershipHero />
-                <BenefitsSection />
-                <DepartmentsSection />
-                <FAQSection />
-                <MembershipCTASection />
-            </main>
-            <Footer />
+            <MembershipHero />
+            <BenefitsSection />
+            <DepartmentsSection />
+            <FAQSection />
+            <MembershipCTASection />
         </>
     );
 }
