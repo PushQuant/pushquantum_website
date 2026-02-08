@@ -98,10 +98,6 @@ export function ContactForm() {
     return (
         <section className="py-16 px-6 bg-white">
             <div className="mx-auto max-w-2xl">
-                <h2 className="text-3xl font-bold text-[#1a1a2e] text-center sm:text-4xl mb-10">
-                    Contact Us
-                </h2>
-
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                     {/* First Name / Last Name */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

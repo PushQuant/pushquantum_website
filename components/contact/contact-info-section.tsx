@@ -36,17 +36,17 @@ export function ContactInfoSection() {
     return (
         <section className="py-16 px-6 bg-[#f3f4f6]">
             <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl font-bold text-[#1a1a2e] sm:text-4xl">
+                <h2 className="text-3xl font-bold text-pq-dark-purple sm:text-4xl">
                     Any remaining Questions?
                 </h2>
-                <p className="mt-3 text-[#1a1a2e]">Feel free to reach out to us!</p>
+                <p className="mt-3 text-pq-dark-purple">Feel free to reach out to us!</p>
 
                 {/* Info Cards Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
                     {contactCards.map((card) => (
                         <div
                             key={card.title}
-                            className="rounded-2xl bg-[#1a1a2e] p-6 text-left"
+                            className="rounded-2xl bg-pq-dark-purple p-6 text-left"
                         >
                             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 mb-4">
                                 <card.icon className="size-5 text-white" />
@@ -65,7 +65,7 @@ export function ContactInfoSection() {
                     {socialCards.map((card) => (
                         <div
                             key={card.title}
-                            className="rounded-2xl bg-[#1a1a2e] p-6 text-left"
+                            className="rounded-2xl bg-pq-dark-purple p-6 text-left"
                         >
                             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 mb-4">
                                 <card.icon className="size-5 text-white" />
