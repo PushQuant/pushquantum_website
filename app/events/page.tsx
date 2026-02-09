@@ -8,22 +8,18 @@ import { PastEventsSection } from "@/components/events/past-events-section";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events - PushQuantum",
-  description:
-    "Discover various activities and events offered by PushQuantum.",
+    title: "Events - PushQuantum",
+    description:
+        "Discover various activities and events offered by PushQuantum.",
 };
 
 export default function EventsPage() {
-  return (
-    <>
-      <Header />
-      <main>
-        <EventsHero />
-        <HighlightsSection />
-        <UpcomingEventsSection />
-        <PastEventsSection />
-      </main>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <EventsHero />
+            <HighlightsSection />
+            <UpcomingEventsSection />
+            <PastEventsSection />
+        </>
+    );
 }
