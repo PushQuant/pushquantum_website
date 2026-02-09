@@ -7,25 +7,25 @@ import { Button } from "@/components/ui/button";
 // Leadership - President and Vice Presidents (highlighted row)
 const leadership = [
     {
-        name: "Alexander Orlov",
+        name: "Felizia Braun",
         role: "President",
-        image: "/department_leads/Alex.jpg",
+        image: "/department_leads/Felizia.jpg",
         roleColor: "bg-[#1a1a2e]",
-        email: "alexander@pushquantum.tech",
+        email: "felizia@pushquantum.tech",
     },
     {
-        name: "Axel Karger",
+        name: "Tjorven Oevermann",
         role: "Vice President",
-        image: "/department_leads/Axel.jpeg",
+        image: "/department_leads/Tjorven.jpg",
         roleColor: "bg-[#1a1a2e]",
-        email: "axel@pushquantum.tech",
+        email: "tjorven@pushquantum.tech",
     },
     {
-        name: "Jessica Link",
+        name: "𝐋𝐚𝐮𝐫𝐚 𝐑𝐨𝐣𝐨 𝐆𝐮𝐞𝐫𝐫𝐞𝐫𝐨",
         role: "Vice President",
-        image: "/department_leads/Jessica.png",
+        image: "/department_leads/Laura.jpg",
         roleColor: "bg-[#1a1a2e]",
-        email: "jessica@pushquantum.tech",
+        email: "laura@pushquantum.tech",
     },
 ];
 
@@ -112,42 +112,178 @@ const departmentHeads = [
 
 // Alumni - Past PushQuantum members
 const alumni = [
+
     {
-        name: "Former Member 1",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Alexander Orlov",
+        role: "President",
+        image: "/alumnis/Alexander_Orlov.jpg",
         roleColor: "bg-gray-500",
     },
     {
-        name: "Former Member 2",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Axel Karger",
+        role: "Vice President",
+        image: "/alumnis/Axel_Karger.jpeg",
         roleColor: "bg-gray-500",
     },
     {
-        name: "Former Member 3",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Jessica Link",
+        role: "Vice President",
+        image: "/alumnis/Jessica_Link.png",
         roleColor: "bg-gray-500",
     },
     {
-        name: "Former Member 4",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Darius Haitsch",
+        role: "Offerings Department Head",
+        image: "/alumnis/Darius_Haitsch.JPG",
         roleColor: "bg-gray-500",
     },
     {
-        name: "Former Member 5",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Marvin Scholz",
+        role: "Partners Department Head",
+        image: "/alumnis/Marvin_Scholz.jpeg",
         roleColor: "bg-gray-500",
     },
     {
-        name: "Former Member 6",
-        role: "Alumni",
-        image: "/department_leads/placeholder.jpg",
+        name: "Marco Candido",
+        role: "Offerings Department Head",
+        image: "/alumnis/Marco_Candido.JPG",
         roleColor: "bg-gray-500",
     },
+    {
+        name: "Alessandro Palermo",
+        role: "Marketing Department Head",
+        image: "/alumnis/Alessandro_Palermo.JPG",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Franz von Silva-Tarouca",
+        role: "President",
+        image: "/alumnis/Franz_von_Silva_Tarouca.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Patrick Hopf",
+        role: "IT Department Head",
+        image: "/alumnis/Patrick_Hopf.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Lukas Vetter",
+        role: "Vice President, Legal & Finance Dep. Head",
+        image: "/alumnis/Lukas_Vetter.JPG",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Barty Bisgin",
+        role: "Qiskit Advocat, Hackathons",
+        image: "/alumnis/Bartu_Bisgin.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Gleb Neplyakh",
+        role: "Working Group - Social Media",
+        image: "/alumnis/Gleb_Neplyakh.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Vladimir Lugo Álvarez",
+        role: "Former Head of Policymaking",
+        image: "/alumnis/Vladimir_Lugo_Alvarez.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "David Cepeda",
+        role: "Working Group - Social Media",
+        image: "/alumnis/David_Cepeda.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Marina Fernández Fernández-Campoamor",
+        role: "QEL v1 Teaching Assistant",
+        image: "/alumnis/Marina_Fernandez_Fernandez_Campoamor.png",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Esteban Prado",
+        role: "QEL v2 co-organizer, TA",
+        image: "/alumnis/Esteban_Prado.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Aritra Sarkar",
+        role: "QEL v1 Teaching Assistant",
+        image: "/alumnis/Aritra_Sarkar.png",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Jannes Stubbemann",
+        role: "Finance",
+        image: "/alumnis/Jannes_Stubbemann.png",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Remy Goldstein",
+        role: "QEL v1 Teaching Assistant",
+        image: "/alumnis/Remy_Goldstein.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Alissa Wilms",
+        role: "QEL v1 Teaching Assistant",
+        image: "/alumnis/Alissa_Wilms.png",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Manuel Kolmet",
+        role: "Co-Founder",
+        image: "/alumnis/Manuel_Kolmet.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Giorgos Chnitidis",
+        role: "Co-Founder",
+        image: "/alumnis/Giorgos_Chnitidis.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Zeno Fox",
+        role: "Co-Founder",
+        image: "/alumnis/Zeno_Fox.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Christopher Masurek",
+        role: "Co-Founder",
+        image: "/alumnis/Christopher_Masurek.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Magomed Abdulaev",
+        role: "Co-Founder",
+        image: "/alumnis/Magomed_Abdulaev.png",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Thomas Hubregtsen",
+        role: "Co-Founder, President",
+        image: "/alumnis/Thomas_Hubregtsen.jpeg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Raúl Berganza Gómez",
+        role: "Co Founder, President",
+        image: "/alumnis/Raul_Berganza_Gomez.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Benjamin Schiffer",
+        role: "Co-Founder, Head of Education",
+        image: "/alumnis/Benjamin_Schiffer.JPG",
+        roleColor: "bg-gray-500",
+    },
+
+
+
 ];
 
 function TeamMemberCard({
