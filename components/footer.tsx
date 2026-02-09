@@ -5,6 +5,7 @@ import Image from "next/image";
 const footerLinks = {
 
     contributions: [
+        { label: "Events", href: "/events" },
         { label: "Membership", href: "/members" },
     ],
     about: [
@@ -12,8 +13,8 @@ const footerLinks = {
         { label: "Contact", href: "/contact" },
     ],
     legal: [
-        { label: "Imprint", href: "#" },
-        { label: "Data Privacy", href: "#" },
+        { label: "Imprint", href: "/imprint" },
+        { label: "Privacy", href: "/privacy" },
     ],
 };
 
