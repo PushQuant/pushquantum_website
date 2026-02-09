@@ -128,7 +128,7 @@ export function Footer() {
                         Design by <span className="font-medium">TUdesign</span>
                     </p>
                     <p className="text-pq-light-purple">
-                        This shit took way to fucking long to make
+                        This shit took way too fucking long to make
                     </p>
                 </div>
             </div>
