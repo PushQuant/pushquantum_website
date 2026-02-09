@@ -120,6 +120,17 @@ export function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div className="text-center text-xs space-y-1">
+                    <p>
+                        made with 🐧 by <span className="font-medium">Leart Zuka</span>
+                    </p>
+                    <p>
+                        Design by <span className="font-medium">TUdesign</span>
+                    </p>
+                    <p className="text-pq-light-purple">
+                        This shit took way to fucking long to make
+                    </p>
+                </div>
             </div>
         </footer>
     );
