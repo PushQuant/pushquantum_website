@@ -26,12 +26,12 @@ export function WhatWeDoSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10">
                     {/* Left - Title and Description */}
                     <div className="flex flex-col items-center lg:items-start">
-                        <h2 className="text-4xl font-bold text-[#1a1a2e] sm:text-5xl lg:text-6xl">
+                        <h2 className="text-4xl font-bold text-pq-dark-purple sm:text-5xl lg:text-6xl">
                             What We Do
                         </h2>
                         {/* Pink underline bar */}
-                        <div className="mt-4 w-16 h-1 bg-[#e91e8c]" />
-                        <p className="mt-6 text-[#1a1a2e] leading-relaxed max-w-md text-lg">
+                        <div className="mt-4 w-16 h-1 bg-pq-bright-pink" />
+                        <p className="mt-6 text-pq-dark-purple leading-relaxed max-w-md text-lg">
                             We organize various activities to promote quantum computing education and research
                         </p>
                     </div>

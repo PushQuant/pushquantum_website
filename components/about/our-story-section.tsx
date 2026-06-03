@@ -41,7 +41,7 @@ export function OurStorySection() {
                     <h2 className="text-3xl font-bold text-white sm:text-4xl">
                         Our Story
                     </h2>
-                    <div className="mx-auto mt-3 w-12 h-1 bg-[#e91e8c]" />
+                    <div className="mx-auto mt-3 w-12 h-1 bg-pq-bright-pink" />
                 </div>
 
                 {/* Timeline */}
@@ -61,12 +61,12 @@ export function OurStorySection() {
                                 onMouseLeave={() => setActiveYear(null)}
                             >
                                 {/* Dot */}
-                                <div className="absolute -top-6 w-3 h-3 rounded-full bg-[#e91e8c] opacity-70" />
+                                <div className="absolute -top-6 w-3 h-3 rounded-full bg-pq-bright-pink opacity-70" />
 
                                 {/* Year box */}
                                 <div
                                     className={`w-20 h-20 rounded-xl flex items-center justify-center text-xl font-bold transition-all duration-300 ${activeYear === item.year
-                                        ? "bg-[#e91e8c] text-white scale-110"
+                                        ? "bg-pq-dark-pink text-white scale-110"
                                         : "bg-white text-black"
                                         }`}
                                 >

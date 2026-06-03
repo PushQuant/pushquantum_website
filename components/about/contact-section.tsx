@@ -55,7 +55,7 @@ export function ContactSection() {
     };
 
     return (
-        <section className="py-20 px-6 bg-[#1a1a2e]">
+        <section className="py-20 px-6 bg-pq-dark-slate">
             <div className="mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="mb-12">
@@ -74,7 +74,7 @@ export function ContactSection() {
                         <div>
                             <div className="flex items-center gap-2 mb-3">
                                 <span className="text-white font-medium">Location</span>
-                                <div className="w-6 h-6 rounded-full bg-[#e91e8c] flex items-center justify-center">
+                                <div className="w-6 h-6 rounded-full bg-pq-bright-pink flex items-center justify-center">
                                     <MapPin className="size-3 text-white" />
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ export function ContactSection() {
                         <div>
                             <div className="flex items-center gap-2 mb-3">
                                 <span className="text-white font-medium">Email</span>
-                                <div className="w-6 h-6 rounded-full bg-[#e91e8c] flex items-center justify-center">
+                                <div className="w-6 h-6 rounded-full bg-pq-bright-pink flex items-center justify-center">
                                     <Mail className="size-3 text-white" />
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ export function ContactSection() {
                                 onChange={(e) =>
                                     setFormData({ ...formData, name: e.target.value })
                                 }
-                                className="bg-[#2d2d5a] border-[#3d3d7a] text-white placeholder:text-gray-400 rounded-lg"
+                                className="bg-pq-dark-purple border-pq-light-purple text-white placeholder:text-gray-400 rounded-lg"
                             />
                             <Input
                                 type="email"
@@ -119,7 +119,7 @@ export function ContactSection() {
                                 onChange={(e) =>
                                     setFormData({ ...formData, email: e.target.value })
                                 }
-                                className="bg-[#2d2d5a] border-[#3d3d7a] text-white placeholder:text-gray-400 rounded-lg"
+                                className="bg-pq-dark-purple border-pq-light-purple text-white placeholder:text-gray-400 rounded-lg"
                             />
                             <Textarea
                                 placeholder="Inquiry"
@@ -128,7 +128,7 @@ export function ContactSection() {
                                     setFormData({ ...formData, inquiry: e.target.value })
                                 }
                                 rows={4}
-                                className="bg-[#2d2d5a] border-[#3d3d7a] text-white placeholder:text-gray-400 rounded-lg resize-none"
+                                className="bg-pq-dark-purple border-pq-light-purple text-white placeholder:text-gray-400 rounded-lg resize-none"
                             />
                             {/* Status Messages */}
                             {submitStatus === "success" && (
@@ -146,7 +146,7 @@ export function ContactSection() {
                                     type="submit"
                                     size="icon"
                                     disabled={isSubmitting}
-                                    className="rounded-lg bg-[#e91e8c] hover:bg-[#d11a7d] text-white disabled:opacity-50"
+                                    className="rounded-lg bg-pq-bright-pink hover:bg-pq-dark-pink text-white disabled:opacity-50"
                                 >
                                     {isSubmitting ? (
                                         <Loader2 className="size-4 animate-spin" />

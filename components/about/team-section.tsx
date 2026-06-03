@@ -315,7 +315,7 @@ function TeamMemberCard({
 
             {/* Name */}
             <h3
-                className={`font-semibold text-[#1a1a2e] ${hasEmail ? "group-hover:text-[#e91e8c]" : ""} transition-colors`}
+                className={`font-semibold text-pq-dark-purple ${hasEmail ? "group-hover:text-pq-bright-pink" : ""} transition-colors`}
             >
                 {member.name}
             </h3>
@@ -346,7 +346,7 @@ export function TeamSection() {
             <div className="mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-[#1a1a2e] sm:text-4xl">
+                    <h2 className="text-3xl font-bold text-pq-dark-purple sm:text-4xl">
                         Our Team
                     </h2>
                 </div>
@@ -359,7 +359,7 @@ export function TeamSection() {
                 </div>
 
                 {/* Divider */}
-                <div className="w-24 h-1 bg-[#e91e8c] mx-auto mb-12" />
+                <div className="w-24 h-1 bg-pq-bright-pink mx-auto mb-12" />
 
                 {/* Department Heads Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -392,7 +392,7 @@ export function TeamSection() {
                 <div className="mt-12 animate-in fade-in slide-in-from-top-4 duration-300">
                     {/* Alumni Header */}
                     <div className="text-center mb-8">
-                        <h3 className="text-2xl font-bold text-[#1a1a2e]">
+                        <h3 className="text-2xl font-bold text-pq-dark-purple">
                             Our Leadership Alumni
                         </h3>
                         <p className="text-gray-500 mt-2">
