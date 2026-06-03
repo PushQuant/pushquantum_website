@@ -1,5 +1,3 @@
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { EventsHero } from "@/components/events/events-hero";
 import { HighlightsSection } from "@/components/events/highlights-section";
 import { UpcomingEventsSection } from "@/components/events/upcoming-events-section";
