@@ -51,7 +51,7 @@ const additionalDepartments = [
     {
         icon: BookOpen,
         title: "Thinktank",
-        description: "Develop curriculum, organize bootcamps, and create learning materials.",
+        description: "Coordinate projects focused on quantum technology’s societal implications.",
     },
 ];
 
