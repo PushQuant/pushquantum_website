@@ -1,0 +1,31 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    name: Validate events data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          # Once a package-lock.json is committed you can speed up CI by
+          # uncommenting the next line (requires the lock file to exist):
+          # cache: npm
+
+      - name: Install dependencies
+        # `npm ci` is preferred (uses the lock file); falls back to `npm install`
+        # if no lock file is present yet.
+        run: npm ci || npm install
+
+      - name: Run tests
+        run: npm test
