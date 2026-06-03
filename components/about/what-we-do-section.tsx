@@ -3,17 +3,17 @@ import Link from "next/link";
 
 const activities = [
     {
-        title: "ThinkTank @\nPushQuantum",
+        title: "Community",
         href: "#",
         gradient: "bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#1e1b4b]",
     },
     {
-        title: "Pushquantum\nHackathon",
+        title: "Professional\nDevelopment",
         href: "#",
         gradient: "bg-gradient-to-br from-[#8b5cf6] via-[#d946ef] to-[#ec4899]",
     },
     {
-        title: "Qiskit Bootcamp",
+        title: "Outreach",
         href: "#",
         gradient: "bg-gradient-to-br from-[#ec4899] via-[#a855f7] to-[#3730a3]",
     },

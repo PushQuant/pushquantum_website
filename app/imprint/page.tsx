@@ -30,12 +30,12 @@ export default function ImprintPage() {
                         </h2>
                         <div className="text-[#1a1a2e] leading-relaxed">
                             <p className="font-semibold">PushQuantum e.V.</p>
-                            <p>Am Glockenbach 10</p>
-                            <p>80469 München</p>
+                            <p>Situlistraße 44</p>
+                            <p>80939 München</p>
                         </div>
                         <div className="mt-4 text-[#1a1a2e] leading-relaxed">
                             <p className="font-semibold">Vertreten durch:</p>
-                            <p>Franz von Silva-Tarouca</p>
+                            <p>Felizia Braun</p>
                         </div>
                     </div>
 
@@ -45,14 +45,14 @@ export default function ImprintPage() {
                             Kontakt
                         </h2>
                         <p className="text-[#1a1a2e] leading-relaxed">
-                            Telefon: +49 171 1148081
+                            Telefon: +49 174 3815775
                             <br />
                             {"E-Mail: "}
                             <a
                                 href="mailto:franz@pushquantum.tech"
                                 className="text-[#e91e8c] hover:underline"
                             >
-                                franz@pushquantum.tech
+                                felizia@pushquantum.tech
                             </a>
                         </p>
                     </div>

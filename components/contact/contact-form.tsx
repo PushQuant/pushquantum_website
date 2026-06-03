@@ -20,7 +20,6 @@ import {
 const universities = [
     "University of Munich (LMU)",
     "Technical University of Munich (TUM)",
-    "University of Applied Sciences Munich",
     "Other",
 ];
 
@@ -31,7 +30,6 @@ export function ContactForm() {
         email: "",
         phone: "",
         university: "",
-        studyProgram: "",
         message: "",
     });
     const [agreedToTerms, setAgreedToTerms] = useState(false);
@@ -81,7 +79,6 @@ export function ContactForm() {
                 email: "",
                 phone: "",
                 university: "",
-                studyProgram: "",
                 message: "",
             });
             setAgreedToTerms(false);
@@ -107,7 +104,7 @@ export function ContactForm() {
                             </label>
                             <Input
                                 name="firstName"
-                                placeholder="John"
+                                placeholder="Lev"
                                 value={formData.firstName}
                                 onChange={handleChange}
                                 required
@@ -120,7 +117,7 @@ export function ContactForm() {
                             </label>
                             <Input
                                 name="lastName"
-                                placeholder="Appleseed"
+                                placeholder="Landau"
                                 value={formData.lastName}
                                 onChange={handleChange}
                                 required
@@ -138,7 +135,7 @@ export function ContactForm() {
                             <Input
                                 name="email"
                                 type="email"
-                                placeholder="Enter E-Mail address ..."
+                                placeholder="lev.landau@gmail.com"
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
@@ -164,38 +161,45 @@ export function ContactForm() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
                             <label className="text-sm font-semibold text-[#1a1a2e]">
-                                Which university do you attend?
+                                Affiliated institution?
                             </label>
-                            <Select
-                                value={formData.university}
-                                onValueChange={(value) =>
-                                    setFormData((prev) => ({ ...prev, university: value }))
-                                }
-                            >
-                                <SelectTrigger className="rounded-lg border-gray-300 bg-white text-[#1a1a2e]">
-                                    <SelectValue placeholder="Select university" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    {universities.map((uni) => (
-                                        <SelectItem key={uni} value={uni}>
-                                            {uni}
-                                        </SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
-                                Your study program
-                            </label>
-                            <Input
-                                name="studyProgram"
-                                placeholder="Enter your study program ..."
-                                value={formData.studyProgram}
-                                onChange={handleChange}
-                                className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400"
-                            />
-                        </div>
+                            {formData.university === "Other" ? (
+                                <div className="flex flex-col gap-1">
+                                    <Input
+                                        placeholder="Enter your institution"
+                                        value={formData.university ?? ""}
+                                        onChange={(e) =>
+                                            setFormData((prev) => ({ ...prev, customUniversity: e.target.value }))
+                                        }
+                                        className="rounded-lg border-gray-300 bg-white text-[#1a1a2e]"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => setFormData((prev) => ({ ...prev, university: "", customUniversity: "" }))}
+                                        className="text-xs text-gray-400 hover:text-[#e91e8c] text-left transition-colors"
+                                    >
+                                        ← Back to list
+                                    </button>
+                                </div>
+                            ) : (
+                                <Select
+                                    value={formData.university}
+                                    onValueChange={(value) =>
+                                        setFormData((prev) => ({ ...prev, university: value, customUniversity: "" }))
+                                    }
+                                >
+                                    <SelectTrigger className="rounded-lg border-gray-300 bg-white text-[#1a1a2e]">
+                                        <SelectValue placeholder="Select university" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        {universities.map((uni) => (
+                                            <SelectItem key={uni} value={uni}>
+                                                {uni}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            )}                        </div>
                     </div>
 
                     {/* Message */}

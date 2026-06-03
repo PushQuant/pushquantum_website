@@ -3,13 +3,14 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 const offerings = [
-    { title: "Sustainability", href: "#" },
-    { title: "Entrepreneurship", href: "#" },
+    { title: "Quantum Entrepreneurship Laboratory", href: "#" },
+    { title: "Quantum Hackathon", href: "#" },
     { title: "Quantentraeume", href: "#" },
+    { title: "International Exchanges", href: "#" },
     { title: "Company Visits", href: "#" },
-    { title: "Professional Support", href: "#" },
-    { title: "Climate Initiatives", href: "#" },
-    { title: "Bootcamps", href: "#" },
+    { title: "Workshops", href: "#" },
+    { title: "Qurie - Women in Quantum", href: "#" },
+    { title: "Journal Club", href: "#" },
 ];
 
 export function OfferingsSection() {
@@ -31,7 +32,7 @@ export function OfferingsSection() {
                     {/* Card */}
                     <div className="relative rounded-2xl bg-[#0d1033]/90 backdrop-blur-sm border border-[#e91e8c]/30 p-8 lg:p-10">
                         <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-8">
-                            Our Offerings
+                            Our Project Highlights
                         </h2>
 
                         <nav className="flex flex-col">

@@ -7,15 +7,15 @@ const contactCards = [
         icon: MessageSquare,
         title: "Location",
         lines: [
-            "Technische Universitat Munchen",
-            "Arcisstrasse 21, Room 05067",
-            "80333 Munchen, Germany",
+            "PushQuantum e.V.",
+            "Situlistraße 44",
+            "80939 München, Germany",
         ],
     },
     {
         icon: Mail,
         title: "E-Mail",
-        lines: ["info@pushquantum.de", "membership@pushquantum.de"],
+        lines: ["info@pushquantum.de"],
     },
 ];
 

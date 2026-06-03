@@ -1,15 +1,17 @@
-
 "use client";
 
 import { useState } from "react";
 import Image from "next/image";
 
 const timelineYears = [
-    { year: "2020", description: "PushQuantum was founded" },
-    { year: "2021", description: "First hackathon organized" },
-    { year: "2022", description: "Expanded partnerships" },
-    { year: "2023", description: "Launched bootcamps" },
-    { year: "2024", description: "Growing community" },
+    {
+        year: "2020", description: ["PushQuantum was founded by six motivated and passionate students", "First Quantum Entrepreneurship Laboratory"]
+    },
+    { year: "2021", description: ["Expanded partnerships"] },
+    { year: "2022", description: ["Launched bootcamps"] },
+    { year: "2023", description: ["Quanten(t)räume Outreach Project Kicks off"] },
+    { year: "2024", description: ["IBM sponsored our Qiskit Bootcamp", "First PushQuantum Hackathon"] },
+    { year: "2025", description: ["Co-organized the Frontier Tech Conference"] },
 ];
 
 export function OurStorySection() {
@@ -73,8 +75,10 @@ export function OurStorySection() {
 
                                 {/* Tooltip */}
                                 {activeYear === item.year && (
-                                    <div className="absolute top-24 bg-white text-black text-sm px-4 py-2 rounded-lg whitespace-nowrap shadow-lg">
-                                        {item.description}
+                                    <div className="absolute top-24 bg-white text-black text-sm px-4 py-2 rounded-lg shadow-lg z-20">
+                                        {item.description.map((line, i) => (
+                                            <p key={i} className="whitespace-nowrap">{line}</p>
+                                        ))}
                                     </div>
                                 )}
                             </button>

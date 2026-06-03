@@ -10,21 +10,21 @@ const leadership = [
         name: "Felizia Braun",
         role: "President",
         image: "/department_leads/Felizia.jpg",
-        roleColor: "bg-[#1a1a2e]",
+        roleColor: "bg-[#090150]",
         email: "felizia@pushquantum.tech",
     },
     {
         name: "Tjorven Oevermann",
         role: "Vice President",
         image: "/department_leads/Tjorven.jpg",
-        roleColor: "bg-[#1a1a2e]",
+        roleColor: "bg-[#090150]",
         email: "tjorven@pushquantum.tech",
     },
     {
-        name: "𝐋𝐚𝐮𝐫𝐚 𝐑𝐨𝐣𝐨 𝐆𝐮𝐞𝐫𝐫𝐞𝐫𝐨",
+        name: "Laura Rojo Guerrero",
         role: "Vice President",
         image: "/department_leads/Laura.jpg",
-        roleColor: "bg-[#1a1a2e]",
+        roleColor: "bg-[#090150]",
         email: "laura@pushquantum.tech",
     },
 ];
@@ -46,39 +46,11 @@ const departmentHeads = [
         email: "jannik@pushquantum.tech",
     },
     {
-        name: "Emily Haworth",
-        role: "Quanten(t)räume & Sustainability",
-        image: "/department_leads/Emily.jpg",
-        roleColor: "bg-[#1a1a2e]",
-        email: "emily@pushquantum.tech",
-    },
-    {
         name: "Lisa Krüger",
         role: "Thinktank",
         image: "/department_leads/Lisa.jpg",
         roleColor: "bg-[#e91e8c]",
         email: "lisa@pushquantum.tech",
-    },
-    {
-        name: "Dimitris Vasileiadis",
-        role: "Partners",
-        image: "/department_leads/Dimitros.jpg",
-        roleColor: "bg-[#4169e1]",
-        email: "dimitris@pushquantum.tech",
-    },
-    {
-        name: "Ginevra Fulco",
-        role: "Marketing",
-        image: "/department_leads/Ginevra.png",
-        roleColor: "bg-[#4169e1]",
-        email: "ginevra@pushquantum.tech",
-    },
-    {
-        name: "Felizia Braun",
-        role: "Offerings",
-        image: "/department_leads/Felizia.jpg",
-        roleColor: "bg-[#4169e1]",
-        email: "felizia@pushquantum.tech",
     },
     {
         name: "Ioana Milea",
@@ -95,13 +67,6 @@ const departmentHeads = [
         email: "aaron@pushquantum.tech",
     },
     {
-        name: "Tjorven Oevermann",
-        role: "Community",
-        image: "/department_leads/Tjorven.jpg",
-        roleColor: "bg-[#4169e1]",
-        email: "tjorven@pushquantum.tech",
-    },
-    {
         name: "Lasse Dierich",
         role: "Legal & Finance",
         image: "/department_leads/Lasse.jpeg",
@@ -112,7 +77,25 @@ const departmentHeads = [
 
 // Alumni - Past PushQuantum members
 const alumni = [
+    {
+        name: "Dimitris Vasileiadis",
+        role: "Partners",
+        image: "/department_leads/Dimitros.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
+        name: "Emily Haworth",
+        role: "Quanten(t)räume & Sustainability",
+        image: "/department_leads/Emily.jpg",
+        roleColor: "bg-gray-500",
+    },
 
+    {
+        name: "Ginevra Fulco",
+        role: "Marketing",
+        image: "/department_leads/Ginevra.png",
+        roleColor: "bg-gray-500",
+    },
     {
         name: "Alexander Orlov",
         role: "President",
@@ -379,7 +362,7 @@ export function TeamSection() {
                 <div className="w-24 h-1 bg-[#e91e8c] mx-auto mb-12" />
 
                 {/* Department Heads Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8">
                     {departmentHeads.map((member) => (
                         <TeamMemberCard key={member.name} member={member} />
                     ))}
@@ -410,7 +393,7 @@ export function TeamSection() {
                     {/* Alumni Header */}
                     <div className="text-center mb-8">
                         <h3 className="text-2xl font-bold text-[#1a1a2e]">
-                            Our Alumni
+                            Our Leadership Alumni
                         </h3>
                         <p className="text-gray-500 mt-2">
                             Former PushQuantum members who helped shape our community

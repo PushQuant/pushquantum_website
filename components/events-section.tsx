@@ -48,12 +48,12 @@ export function EventsSection() {
                     {events.map((event) => (
                         <div
                             key={event.title}
-                            className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
+                            className="group p-6 rounded-xl bg-pq-dark-purple border border-border hover:border-primary/50 transition-colors"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="flex flex-col items-center justify-center w-14 h-14 rounded-lg bg-primary/10 text-primary">
-                                    <span className="text-xs font-medium uppercase">{event.date.month}</span>
-                                    <span className="text-xl font-bold">{event.date.day}</span>
+                                    <span className="text-xs font-medium uppercase text-pq-bright-pink">{event.date.month}</span>
+                                    <span className="text-xl font-bold text-pq-bright-pink">{event.date.day}</span>
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-foreground font-semibold text-lg">
@@ -64,7 +64,7 @@ export function EventsSection() {
                                     </p>
                                     <Link
                                         href={event.href}
-                                        className="inline-flex items-center gap-1 mt-4 text-sm text-primary hover:underline"
+                                        className="inline-flex items-center gap-1 mt-4 text-sm text-pq-bright-pink hover:underline"
                                     >
                                         Learn More
                                         <ArrowRight className="size-3" />

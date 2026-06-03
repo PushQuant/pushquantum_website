@@ -80,8 +80,8 @@ export function ContactSection() {
                             </div>
                             <div className="text-gray-300 text-sm leading-relaxed">
                                 <p>PushQuantum e.V.</p>
-                                <p>Am Glockenback 10</p>
-                                <p>80469 München, Germany</p>
+                                <p>Situlistraße 44</p>
+                                <p>80939 München, Germany</p>
                             </div>
                         </div>
 
@@ -94,8 +94,7 @@ export function ContactSection() {
                                 </div>
                             </div>
                             <div className="text-gray-300 text-sm">
-                                <p>hello@pushquantum.de</p>
-                                <p>offerings@pushquantum.de</p>
+                                <p>info@pushquantum.tech</p>
                             </div>
                         </div>
                     </div>

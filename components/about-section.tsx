@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, CalendarDays, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export function AboutSection() {
     return (
@@ -12,11 +13,7 @@ export function AboutSection() {
                             About Us
                         </h2>
                         <p className="mt-6 text-pq-dark-purple leading-relaxed">
-                            PushQuantum is a student-led club based in Munich, bringing together
-                            young minds passionate about quantum technologies. Whether you&apos;re
-                            into qubits, code, or just curious, we host events, talks, and
-                            hands-on sessions to help you dive deeper and connect with the
-                            community.
+                            PushQuantum is a Munich-based student club. We offer real-world focused education in quantum tech for students from all disciplines
                         </p>
 
                         <div className="mt-8 space-y-4">
@@ -52,7 +49,13 @@ export function AboutSection() {
                         <div className="aspect-[4/3] rounded-2xl bg-card border border-border overflow-hidden">
                             <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
                                 <div className="text-center">
-                                    <p className="text-sm">Team collaboration image</p>
+                                    <Image
+                                        src="/images/community_landing_page_image.jpg"
+                                        alt="Community group photo"
+                                        fill
+                                        className="object-cover rounded-sm"
+                                        priority
+                                    />
                                 </div>
                             </div>
                         </div>

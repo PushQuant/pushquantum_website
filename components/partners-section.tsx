@@ -35,9 +35,14 @@ const partners = [
         name: "Quandela",
         logo: "/logos/partners/quandela/Quandela.png",
     },
+    {
+        name: "Peak Quantum",
+        logo: "/logos/partners/peak_quantum/peak_quantum_black.svg"
+    }
 ];
 
 export function PartnersSection() {
+    const text = "We collaborate with academic institutions, industry leaders, and community organizations that share our passion for advancing quantum science. Our partners support our programs, contribute expertise, and help create opportunities for learning and innovation. Together, we build bridges between research, education, and real-world impact.\nIs your organisation ready to shape the future of quantum? Join PushQuantum in supporting the next generation of talent. Reach out today to explore how we can drive meaningful impact together."
     return (
         <section id="partners" className="py-24 px-6 overflow-hidden bg-white">
             <div className="mx-auto max-w-7xl">
@@ -46,10 +51,8 @@ export function PartnersSection() {
                         <h2 className="text-3xl font-bold text-[#1a1a2e] sm:text-4xl">
                             Our Partners
                         </h2>
-                        <p className="mt-6 text-[#1a1a2e] leading-relaxed max-w-lg">
-                            We at PushQuantum are happy to have the chance to work together
-                            with many different individuals and also big companies that help
-                            us on our mission to educate others on quantum tech.
+                        <p className="mt-6 text-[#1a1a2e] leading-relaxed max-w-lg" style={{ whiteSpace: 'pre-line' }}>
+                            {text}
                         </p>
                         <Link href="#" className="inline-block mt-8">
                             <button className="rounded-full px-7 py-3 text-sm font-semibold text-[#1a1a2e] transition border border-[#1a1a2e] hover:bg-primary hover:text-white hover:border-primary">
