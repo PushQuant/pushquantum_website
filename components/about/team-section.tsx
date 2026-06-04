@@ -10,22 +10,29 @@ const leadership = [
         name: "Felizia Braun",
         role: "President",
         image: "/department_leads/Felizia.jpg",
-        roleColor: "bg-[#090150]",
+        roleColor: "bg-pq-dark-purple",
         email: "felizia@pushquantum.tech",
     },
     {
         name: "Tjorven Oevermann",
         role: "Vice President",
         image: "/department_leads/Tjorven.jpg",
-        roleColor: "bg-[#090150]",
+        roleColor: "bg-pq-dark-purple",
         email: "tjorven@pushquantum.tech",
     },
     {
         name: "Laura Rojo Guerrero",
         role: "Vice President",
         image: "/department_leads/Laura.jpg",
-        roleColor: "bg-[#090150]",
+        roleColor: "bg-pq-dark-purple",
         email: "laura@pushquantum.tech",
+    },
+    {
+        name: "Axel Karger",
+        role: "Treasurer",
+        image: "/department_leads/Axel.jpeg",
+        roleColor: "bg-pq-dark-purple",
+        email: "axel@pushquantum.tech",
     },
 ];
 
@@ -39,13 +46,6 @@ const departmentHeads = [
         email: "leart@pushquantum.tech",
     },
     {
-        name: "Jannik Pflieger",
-        role: "Quanten(t)räume",
-        image: "/department_leads/Jannik.jpg",
-        roleColor: "bg-pq-dark-purple",
-        email: "jannik@pushquantum.tech",
-    },
-    {
         name: "Lisa Krüger",
         role: "Thinktank",
         image: "/department_leads/Lisa.jpg",
@@ -53,30 +53,96 @@ const departmentHeads = [
         email: "lisa@pushquantum.tech",
     },
     {
-        name: "Ioana Milea",
-        role: "Offerings",
-        image: "/department_leads/Ioana.jpg",
-        roleColor: "bg-[#4169e1]",
-        email: "ioana@pushquantum.tech",
+        name: "Jannik Pflieger",
+        role: "Quanten(t)räume",
+        image: "/department_leads/Jannik.jpg",
+        roleColor: "bg-pq-dark-purple",
+        email: "jannik@pushquantum.tech",
     },
     {
         name: "Aaron Sander",
-        role: "Quantum Entrepreneurship Lab",
+        role: "Quantum Entrepreneurship Laboratory",
         image: "/department_leads/Aaron.JPG",
         roleColor: "bg-[#4169e1]",
         email: "aaron@pushquantum.tech",
     },
     {
-        name: "Lasse Dierich",
+        name: "Yichen Teresa Wang",
         role: "Legal & Finance",
-        image: "/department_leads/Lasse.jpeg",
+        image: "/department_leads/Teresa.jpg",
         roleColor: "bg-[#4169e1]",
-        email: "lasse@pushquantum.tech",
+    },
+    {
+        name: "Eduardo Sánchez",
+        role: "Community",
+        image: "/department_leads/Edu.jpeg",
+        roleColor: "bg-pq-dark-purple",
+        email: "eduardo@pushquantum.tech",
+    },
+    {
+        name: "Leonardo Rizzo",
+        role: "Community",
+        image: "/department_leads/Leonardo.JPG",
+        roleColor: "bg-pq-dark-purple",
+        email: "leonardo@pushquantum.tech",
+    },
+    {
+        name: "Felix Schmidt",
+        role: "Head of partnerships",
+        image: "/department_leads/Felix.jpg",
+        roleColor: "bg-[#4169e1]",
+        email: "felix@pushquantum.tech",
+    },
+    {
+        name: "Niccolò Sfregola",
+        role: "Head of marketing",
+        image: "/department_leads/Niccolo.jpg",
+        roleColor: "bg-pq-bright-pink",
+    },
+
+    {
+        name: "Naman Verma",
+        role: "Offerings",
+        image: "/department_leads/Naman.jpg",
+        roleColor: "bg-[#4169e1]",
+    },
+    {
+        name: "Etay Schneider",
+        role: "Offerings",
+        image: "/department_leads/Etay.jpg",
+        roleColor: "bg-[#4169e1]",
+    },
+];
+
+const strategicAdvisors = [
+    {
+        name: "Alexander Orlov",
+        role: "Former President",
+        image: "/alumnis/Alexander_Orlov.jpg",
+        roleColor: "bg-pq-dark-purple",
+    },
+    {
+        name: "Raúl Berganza Gómez",
+        role: "Former President & Vice President. Co-Founder",
+        image: "/alumnis/Raul_Berganza_Gomez.jpg",
+        roleColor: "bg-pq-dark-purple",
+    },
+    {
+        name: "Thomas Hubregtsen",
+        role: "Former Vice President & President. Co-Founder",
+        image: "/alumnis/Thomas_Hubregtsen.jpeg",
+        roleColor: "bg-pq-dark-purple",
     },
 ];
 
 // Alumni - Past PushQuantum members
 const alumni = [
+    {
+        name: "Ioana Milea",
+        role: "Offerings",
+        image: "/department_leads/Ioana.jpg",
+        roleColor: "bg-gray-500",
+    },
     {
         name: "Dimitris Vasileiadis",
         role: "Partners",
@@ -94,18 +160,6 @@ const alumni = [
         name: "Ginevra Fulco",
         role: "Marketing",
         image: "/department_leads/Ginevra.png",
-        roleColor: "bg-gray-500",
-    },
-    {
-        name: "Alexander Orlov",
-        role: "President",
-        image: "/alumnis/Alexander_Orlov.jpg",
-        roleColor: "bg-gray-500",
-    },
-    {
-        name: "Axel Karger",
-        role: "Vice President",
-        image: "/alumnis/Axel_Karger.jpeg",
         roleColor: "bg-gray-500",
     },
     {
@@ -247,18 +301,6 @@ const alumni = [
         roleColor: "bg-gray-500",
     },
     {
-        name: "Thomas Hubregtsen",
-        role: "Co-Founder, President",
-        image: "/alumnis/Thomas_Hubregtsen.jpeg",
-        roleColor: "bg-gray-500",
-    },
-    {
-        name: "Raúl Berganza Gómez",
-        role: "Co Founder, President",
-        image: "/alumnis/Raul_Berganza_Gomez.jpg",
-        roleColor: "bg-gray-500",
-    },
-    {
         name: "Benjamin Schiffer",
         role: "Co-Founder, Head of Education",
         image: "/alumnis/Benjamin_Schiffer.JPG",
@@ -366,6 +408,17 @@ export function TeamSection() {
                     {departmentHeads.map((member) => (
                         <TeamMemberCard key={member.name} member={member} />
                     ))}
+                </div>
+                {/* Strategic Advisors */}
+                <div className="mt-20">
+                    <h2 className="text-2xl font-bold text-pq-dark-purple text-center sm:text-4xl mb-12">
+                        PushQuantum Strategic Advisors
+                    </h2>
+                    <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
+                        {strategicAdvisors.map((member) => (
+                            <TeamMemberCard key={member.name} member={member} size="large" />
+                        ))}
+                    </div>
                 </div>
 
 
