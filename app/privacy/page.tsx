@@ -25,10 +25,10 @@ export default function PrivacyPage() {
                 <div className="mx-auto max-w-3xl">
                     {/* Section 1 */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-4">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-4">
                             1. Datenschutz auf einen Blick
                         </h2>
-                        <p className="text-[#1a1a2e]/80 leading-relaxed">
+                        <p className="text-pq-dark-purple/80 leading-relaxed">
                             Die folgenden Hinweise geben einen einfachen Überblick darüber,
                             was mit Ihren personenbezogenen Daten passiert, wenn Sie diese
                             Website besuchen. Personenbezogene Daten sind alle Daten, mit
@@ -40,17 +40,17 @@ export default function PrivacyPage() {
 
                     {/* Datenerfassung */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-6">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-6">
                             Datenerfassung auf dieser Website
                         </h2>
 
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Wer ist verantwortlich für die Datenerfassung auf dieser
                                     Website?
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Die Datenverarbeitung auf dieser Website erfolgt durch den
                                     Websitebetreiber. Dessen Kontaktdaten finden Sie im
                                     Abschnitt &ldquo;Hinweis zur verantwortlichen Stelle&rdquo;
@@ -59,10 +59,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Wie erfassen wir Ihre Daten?
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Ihre Daten werden zum einen dadurch erhoben, dass Sie uns
                                     diese mitteilen, beispielsweise in einem Kontaktformular.
                                     Andere Daten werden automatisch beim Besuch der Website durch
@@ -72,10 +72,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Wofür nutzen wir Ihre Daten?
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Ein Teil der Daten wird erhoben, um die fehlerfreie
                                     Bereitstellung der Website zu gewährleisten. Andere Daten
                                     können zur Analyse des Nutzerverhaltens verwendet werden.
@@ -83,10 +83,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Welche Rechte haben Sie bezüglich Ihrer Daten?
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Sie haben jederzeit das Recht auf unentgeltliche Auskunft
                                     über Herkunft, Empfänger und Zweck Ihrer gespeicherten
                                     personenbezogenen Daten. Sie können die Berichtigung oder
@@ -103,10 +103,10 @@ export default function PrivacyPage() {
 
                     {/* Section 2 */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-4">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-4">
                             2. Hosting und Content Delivery Networks (CDN)
                         </h2>
-                        <p className="text-[#1a1a2e]/80 leading-relaxed">
+                        <p className="text-pq-dark-purple/80 leading-relaxed">
                             Diese Website wird bei einem externen Dienstleister gehostet.
                             Personenbezogene Daten, die auf dieser Website erfasst werden
                             (z. B. IP-Adresse, Kontaktanfragen oder Websitezugriffe), werden
@@ -119,23 +119,23 @@ export default function PrivacyPage() {
 
                     {/* Section 3 */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-6">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-6">
                             3. Allgemeine Hinweise und Pflichtinformationen
                         </h2>
 
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Datenschutz
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Die Betreiber dieser Seiten nehmen den Schutz Ihrer
                                     persönlichen Daten sehr ernst und behandeln Ihre
                                     personenbezogenen Daten entsprechend gesetzlicher
                                     Vorschriften vertraulich. Personenbezogene Daten sind Daten,
                                     mit denen Sie persönlich identifiziert werden können.
                                 </p>
-                                <p className="mt-3 text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="mt-3 text-pq-dark-purple/80 leading-relaxed">
                                     Wir weisen darauf hin, dass die Datenübertragung im Internet
                                     (z. B. bei E-Mail-Kommunikation) Sicherheitslücken aufweisen
                                     kann. Ein lückenloser Schutz vor dem Zugriff Dritter ist
@@ -144,10 +144,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Hinweis zur verantwortlichen Stelle
                                 </h3>
-                                <div className="text-[#1a1a2e]/80 leading-relaxed">
+                                <div className="text-pq-dark-purple/80 leading-relaxed">
                                     <p>
                                         Verantwortliche Stelle für die Datenverarbeitung auf
                                         dieser Website ist:
@@ -164,7 +164,7 @@ export default function PrivacyPage() {
                                         {"E-Mail: "}
                                         <a
                                             href="mailto:raul@pushquantum.tech"
-                                            className="text-[#e91e8c] hover:underline"
+                                            className="text-pq-bright-pink hover:underline"
                                         >
                                             raul@pushquantum.tech
                                         </a>
@@ -173,10 +173,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Speicherdauer
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Sofern innerhalb dieser Datenschutzerklärung keine
                                     speziellere Speicherdauer genannt wurde, verbleiben Ihre
                                     personenbezogenen Daten bei uns, bis der Zweck der
@@ -186,10 +186,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Widerruf Ihrer Einwilligung
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Viele Datenverarbeitungsvorgänge sind nur mit Ihrer
                                     ausdrücklichen Einwilligung möglich. Sie können eine bereits
                                     erteilte Einwilligung jederzeit widerrufen. Die
@@ -199,10 +199,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Widerspruchsrecht
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Sie haben unter bestimmten Voraussetzungen das Recht, der
                                     Verarbeitung Ihrer personenbezogenen Daten zu widersprechen,
                                     insbesondere dann, wenn die Verarbeitung auf Grundlage
@@ -211,10 +211,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Beschwerderecht bei einer Aufsichtsbehörde
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Im Falle datenschutzrechtlicher Verstöße steht Ihnen ein
                                     Beschwerderecht bei der zuständigen
                                     Datenschutz-Aufsichtsbehörde zu.
@@ -222,10 +222,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Recht auf Datenübertragbarkeit
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Sie haben das Recht, Daten, die wir automatisiert
                                     verarbeiten, an sich oder an einen Dritten in einem
                                     gängigen, maschinenlesbaren Format aushändigen zu lassen.
@@ -233,10 +233,10 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     SSL- bzw. TLS-Verschlüsselung
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Diese Website nutzt aus Sicherheitsgründen eine
                                     SSL/TLS-Verschlüsselung. Übermittelte Daten sind dadurch
                                     für Dritte nicht ohne Weiteres einsehbar.

@@ -27,14 +27,14 @@ function PastEventCard({ event }: { event: EventData }) {
           {event.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs bg-[#1a1a2e] text-white px-2 py-0.5 rounded-full"
+              className="text-xs bg-pq-dark-purple text-white px-2 py-0.5 rounded-full"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <h3 className="font-bold text-[#1a1a2e] text-lg mb-1">
+        <h3 className="font-bold text-pq-dark-purple text-lg mb-1">
           {event.title}
         </h3>
 
@@ -44,7 +44,7 @@ function PastEventCard({ event }: { event: EventData }) {
 
         <Link
           href={`/events/${event.slug}`}
-          className="text-sm font-medium text-[#1a1a2e] border border-[#1a1a2e] rounded-full px-5 py-1.5 w-fit hover:bg-[#1a1a2e] hover:text-white transition-colors"
+          className="text-sm font-medium text-pq-dark-purple border border-pq-dark-purple rounded-full px-5 py-1.5 w-fit hover:bg-pq-dark-purple hover:text-white transition-colors"
         >
           Learn more
         </Link>
@@ -64,13 +64,13 @@ export function PastEventsSection() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold text-[#1a1a2e] text-center sm:text-4xl mb-10">
+        <h2 className="text-3xl font-bold text-pq-dark-purple text-center sm:text-4xl mb-10">
           Past Events
         </h2>
 
         {visibleGroups.map((group) => (
           <div key={group.year} className="mb-10">
-            <h3 className="text-xl font-bold text-[#1a1a2e] mb-4">
+            <h3 className="text-xl font-bold text-pq-dark-purple mb-4">
               {group.year}
             </h3>
             <div className="flex flex-col gap-4">
@@ -86,7 +86,7 @@ export function PastEventsSection() {
             <button
               type="button"
               onClick={() => setShowAll(true)}
-              className="text-sm font-medium text-[#1a1a2e] border border-[#1a1a2e] rounded-full px-6 py-2 hover:bg-[#1a1a2e] hover:text-white transition-colors"
+              className="text-sm font-medium text-pq-dark-purple border border-pq-dark-purple rounded-full px-6 py-2 hover:bg-pq-dark-purple hover:text-white transition-colors"
             >
               View More
             </button>

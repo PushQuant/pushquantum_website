@@ -67,10 +67,10 @@ export function DepartmentsSection() {
             <div className="mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-[#1a1a2e] sm:text-4xl">
+                    <h2 className="text-3xl font-bold text-pq-dark-purple sm:text-4xl">
                         Our Departments
                     </h2>
-                    <p className="mt-4 text-[#1a1a2e]/70">
+                    <p className="mt-4 text-pq-dark-purple/70">
                         you will join one of our startup-like departments!
                     </p>
                 </div>
@@ -82,11 +82,11 @@ export function DepartmentsSection() {
                             key={dept.title}
                             className="bg-white rounded-xl p-6 border border-gray-200"
                         >
-                            <div className="w-12 h-12 rounded-lg bg-[#1a1a2e]/5 flex items-center justify-center mb-4">
-                                <dept.icon className="w-6 h-6 text-[#1a1a2e]" />
+                            <div className="w-12 h-12 rounded-lg bg-pq-dark-purple/5 flex items-center justify-center mb-4">
+                                <dept.icon className="w-6 h-6 text-pq-dark-purple" />
                             </div>
-                            <h3 className="font-semibold text-[#1a1a2e] mb-2">{dept.title}</h3>
-                            <p className="text-sm text-[#1a1a2e]/70">{dept.description}</p>
+                            <h3 className="font-semibold text-pq-dark-purple mb-2">{dept.title}</h3>
+                            <p className="text-sm text-pq-dark-purple/70">{dept.description}</p>
                         </div>
                     ))}
                 </div>

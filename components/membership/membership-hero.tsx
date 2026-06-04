@@ -7,10 +7,10 @@ export function MembershipHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left - Text */}
           <div>
-            <h1 className="text-4xl font-bold text-[#1a1a2e] sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold text-pq-dark-purple sm:text-5xl lg:text-6xl">
               Membership
             </h1>
-            <p className="mt-4 text-[#1a1a2e]/80 text-lg max-w-md">
+            <p className="mt-4 text-pq-dark-purple/80 text-lg max-w-md">
               We support our members to be at the center of quantum revolution.
             </p>
           </div>
@@ -25,7 +25,7 @@ export function MembershipHero() {
               priority
             />
             {/* Placeholder gradient if image missing */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#e91e8c]/20 to-[#4169e1]/20" />
+            <div className="absolute inset-0 bg-gradient-to-br from-pq-bright-pink/20 to-[#4169e1]/20" />
           </div>
         </div>
       </div>

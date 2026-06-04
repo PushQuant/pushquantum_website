@@ -99,8 +99,8 @@ export function ContactForm() {
                     {/* First Name / Last Name */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
-                                First Name <span className="text-[#e91e8c]">*</span>
+                            <label className="text-sm font-semibold text-pq-dark-purple">
+                                First Name <span className="text-pq-bright-pink">*</span>
                             </label>
                             <Input
                                 name="firstName"
@@ -108,12 +108,12 @@ export function ContactForm() {
                                 value={formData.firstName}
                                 onChange={handleChange}
                                 required
-                                className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400"
+                                className="rounded-lg border-gray-300 bg-white text-pq-dark-purple placeholder:text-gray-400"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
-                                Last Name <span className="text-[#e91e8c]">*</span>
+                            <label className="text-sm font-semibold text-pq-dark-purple">
+                                Last Name <span className="text-pq-bright-pink">*</span>
                             </label>
                             <Input
                                 name="lastName"
@@ -121,7 +121,7 @@ export function ContactForm() {
                                 value={formData.lastName}
                                 onChange={handleChange}
                                 required
-                                className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400"
+                                className="rounded-lg border-gray-300 bg-white text-pq-dark-purple placeholder:text-gray-400"
                             />
                         </div>
                     </div>
@@ -129,8 +129,8 @@ export function ContactForm() {
                     {/* Email / Phone */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
-                                Email Address <span className="text-[#e91e8c]">*</span>
+                            <label className="text-sm font-semibold text-pq-dark-purple">
+                                Email Address <span className="text-pq-bright-pink">*</span>
                             </label>
                             <Input
                                 name="email"
@@ -139,11 +139,11 @@ export function ContactForm() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400"
+                                className="rounded-lg border-gray-300 bg-white text-pq-dark-purple placeholder:text-gray-400"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
+                            <label className="text-sm font-semibold text-pq-dark-purple">
                                 Phone Number
                             </label>
                             <Input
@@ -152,7 +152,7 @@ export function ContactForm() {
                                 placeholder="Enter your phone number ..."
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400"
+                                className="rounded-lg border-gray-300 bg-white text-pq-dark-purple placeholder:text-gray-400"
                             />
                         </div>
                     </div>
@@ -160,7 +160,7 @@ export function ContactForm() {
                     {/* University / Study Program */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm font-semibold text-[#1a1a2e]">
+                            <label className="text-sm font-semibold text-pq-dark-purple">
                                 Affiliated institution?
                             </label>
                             {formData.university === "Other" ? (
@@ -171,12 +171,12 @@ export function ContactForm() {
                                         onChange={(e) =>
                                             setFormData((prev) => ({ ...prev, customUniversity: e.target.value }))
                                         }
-                                        className="rounded-lg border-gray-300 bg-white text-[#1a1a2e]"
+                                        className="rounded-lg border-gray-300 bg-white text-pq-dark-purple"
                                     />
                                     <button
                                         type="button"
                                         onClick={() => setFormData((prev) => ({ ...prev, university: "", customUniversity: "" }))}
-                                        className="text-xs text-gray-400 hover:text-[#e91e8c] text-left transition-colors"
+                                        className="text-xs text-gray-400 hover:text-pq-bright-pink text-left transition-colors"
                                     >
                                         ← Back to list
                                     </button>
@@ -188,7 +188,7 @@ export function ContactForm() {
                                         setFormData((prev) => ({ ...prev, university: value, customUniversity: "" }))
                                     }
                                 >
-                                    <SelectTrigger className="rounded-lg border-gray-300 bg-white text-[#1a1a2e]">
+                                    <SelectTrigger className="rounded-lg border-gray-300 bg-white text-pq-dark-purple">
                                         <SelectValue placeholder="Select university" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -204,7 +204,7 @@ export function ContactForm() {
 
                     {/* Message */}
                     <div className="flex flex-col gap-2">
-                        <label className="text-sm font-semibold text-[#1a1a2e]">
+                        <label className="text-sm font-semibold text-pq-dark-purple">
                             Message
                         </label>
                         <Textarea
@@ -214,7 +214,7 @@ export function ContactForm() {
                             onChange={handleChange}
                             rows={6}
                             required
-                            className="rounded-lg border-gray-300 bg-white text-[#1a1a2e] placeholder:text-gray-400 resize-none"
+                            className="rounded-lg border-gray-300 bg-white text-pq-dark-purple placeholder:text-gray-400 resize-none"
                         />
                     </div>
 
@@ -228,9 +228,9 @@ export function ContactForm() {
                             }
                             className="mt-0.5"
                         />
-                        <label htmlFor="terms" className="text-sm text-[#1a1a2e]">
+                        <label htmlFor="terms" className="text-sm text-pq-dark-purple">
                             I agree to the terms and conditions and privacy policy.{" "}
-                            <span className="text-[#e91e8c]">*</span>
+                            <span className="text-pq-bright-pink">*</span>
                         </label>
                     </div>
 
@@ -253,7 +253,7 @@ export function ContactForm() {
                             type="submit"
                             disabled={isSubmitting}
                             variant="outline"
-                            className="rounded-full border-[#e91e8c] text-[#e91e8c] hover:bg-[#e91e8c] hover:text-white px-10 py-3 font-semibold disabled:opacity-50 bg-transparent"
+                            className="rounded-full border-pq-dark-pink text-pq-bright-pink hover:bg-pq-dark-pink hover:text-white px-10 py-3 font-semibold disabled:opacity-50 bg-transparent"
                         >
                             {isSubmitting ? (
                                 <Loader2 className="size-4 animate-spin mr-2" />

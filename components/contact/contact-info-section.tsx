@@ -77,7 +77,7 @@ export function ContactInfoSection() {
                                 href={card.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block rounded-full border border-white text-white text-sm px-6 py-2 hover:bg-white hover:text-[#1a1a2e] transition-colors"
+                                className="inline-block rounded-full border border-white text-white text-sm px-6 py-2 hover:bg-white hover:text-pq-dark-purple transition-colors"
                             >
                                 Follow us!
                             </Link>

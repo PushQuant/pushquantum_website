@@ -9,7 +9,7 @@ export function EventContact({ event }: { event: EventData }) {
   return (
     <section className="py-16 px-6 bg-[#f9fafb]">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-bold text-[#1a1a2e] sm:text-3xl mb-2 text-center">
+        <h2 className="text-2xl font-bold text-pq-dark-purple sm:text-3xl mb-2 text-center">
           Contact
         </h2>
         <p className="text-gray-600 text-center mb-10">
@@ -34,19 +34,19 @@ export function EventContact({ event }: { event: EventData }) {
               </div>
 
               {/* Name */}
-              <h3 className="font-bold text-[#1a1a2e] text-lg">
+              <h3 className="font-bold text-pq-dark-purple text-lg">
                 {organizer.name}
               </h3>
 
               {/* Position */}
-              <p className="text-sm text-[#e91e8c] font-medium mt-1">
+              <p className="text-sm text-pq-bright-pink font-medium mt-1">
                 {organizer.position}
               </p>
 
               {/* Email */}
               <a
                 href={`mailto:${organizer.email}`}
-                className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-[#1a1a2e] mt-2 transition-colors"
+                className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-pq-dark-purple mt-2 transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 {organizer.email}
@@ -56,7 +56,7 @@ export function EventContact({ event }: { event: EventData }) {
               {organizer.linkedin && (
                 <Link
                   href={organizer.linkedin}
-                  className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-[#1a1a2e] mt-1 transition-colors"
+                  className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-pq-dark-purple mt-1 transition-colors"
                 >
                   <Linkedin className="w-4 h-4" />
                   LinkedIn Link
@@ -70,7 +70,7 @@ export function EventContact({ event }: { event: EventData }) {
           <div className="flex justify-center mt-10">
             <Link
               href={event.signUpUrl}
-              className="inline-block text-sm font-semibold text-white bg-[#e91e8c] rounded-full px-7 py-3 hover:bg-[#d11a7d] transition-colors"
+              className="inline-block text-sm font-semibold text-white bg-pq-bright-pink rounded-full px-7 py-3 hover:bg-pq-dark-pink transition-colors"
             >
               Sign up
             </Link>

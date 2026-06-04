@@ -25,15 +25,15 @@ export default function ImprintPage() {
                 <div className="mx-auto max-w-3xl">
                     {/* Address */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-4">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-4">
                             Angaben gem. § 5 TMG
                         </h2>
-                        <div className="text-[#1a1a2e] leading-relaxed">
+                        <div className="text-pq-dark-purple leading-relaxed">
                             <p className="font-semibold">PushQuantum e.V.</p>
                             <p>Situlistraße 44</p>
                             <p>80939 München</p>
                         </div>
-                        <div className="mt-4 text-[#1a1a2e] leading-relaxed">
+                        <div className="mt-4 text-pq-dark-purple leading-relaxed">
                             <p className="font-semibold">Vertreten durch:</p>
                             <p>Felizia Braun</p>
                         </div>
@@ -41,16 +41,16 @@ export default function ImprintPage() {
 
                     {/* Kontakt */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-4">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-4">
                             Kontakt
                         </h2>
-                        <p className="text-[#1a1a2e] leading-relaxed">
+                        <p className="text-pq-dark-purple leading-relaxed">
                             Telefon: +49 174 3815775
                             <br />
                             {"E-Mail: "}
                             <a
                                 href="mailto:franz@pushquantum.tech"
-                                className="text-[#e91e8c] hover:underline"
+                                className="text-pq-bright-pink hover:underline"
                             >
                                 felizia@pushquantum.tech
                             </a>
@@ -59,16 +59,16 @@ export default function ImprintPage() {
 
                     {/* Haftungsausschluss */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-bold text-[#1a1a2e] mb-6">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple mb-6">
                             Haftungsausschluss
                         </h2>
 
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Haftung für Inhalte
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Die Inhalte dieser Website wurden mit größter Sorgfalt
                                     erstellt. Für die Richtigkeit, Vollständigkeit und
                                     Aktualität der Inhalte können wir jedoch keine Gewähr
@@ -89,10 +89,10 @@ export default function ImprintPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Haftung für Links
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Unser Angebot enthält Links zu externen Webseiten Dritter,
                                     auf deren Inhalte wir keinen Einfluss haben. Deshalb können
                                     wir für diese fremden Inhalte auch keine Gewähr übernehmen.
@@ -109,10 +109,10 @@ export default function ImprintPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Urheberrecht
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Die durch die Seitenbetreiber erstellten Inhalte und Werke
                                     auf diesen Seiten unterliegen dem deutschen Urheberrecht.
                                     Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
@@ -130,10 +130,10 @@ export default function ImprintPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">
+                                <h3 className="text-lg font-semibold text-pq-dark-purple mb-2">
                                     Datenschutz
                                 </h3>
-                                <p className="text-[#1a1a2e]/80 leading-relaxed">
+                                <p className="text-pq-dark-purple/80 leading-relaxed">
                                     Die Nutzung der Webseite ist in der Regel ohne Angabe
                                     personenbezogener Daten möglich. Soweit personenbezogene
                                     Daten erhoben werden, erfolgt dies – soweit möglich – stets

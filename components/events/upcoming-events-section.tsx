@@ -35,14 +35,14 @@ function EventCard({ event }: { event: EventData }) {
           {event.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs bg-[#1a1a2e] text-white px-2 py-0.5 rounded-full"
+              className="text-xs bg-pq-dark-purple text-white px-2 py-0.5 rounded-full"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <h3 className="font-bold text-[#1a1a2e] text-lg mb-1">
+        <h3 className="font-bold text-pq-dark-purple text-lg mb-1">
           {event.title}
         </h3>
 
@@ -54,14 +54,14 @@ function EventCard({ event }: { event: EventData }) {
           {event.signUpUrl && (
             <Link
               href={event.signUpUrl}
-              className="text-sm font-medium text-white bg-[#e91e8c] rounded-full px-5 py-1.5 hover:bg-[#d11a7d] transition-colors"
+              className="text-sm font-medium text-white bg-pq-bright-pink rounded-full px-5 py-1.5 hover:bg-pq-dark-pink transition-colors"
             >
               Sign up
             </Link>
           )}
           <Link
             href={`/events/${event.slug}`}
-            className="text-sm font-medium text-[#1a1a2e] border border-[#1a1a2e] rounded-full px-5 py-1.5 hover:bg-[#1a1a2e] hover:text-white transition-colors"
+            className="text-sm font-medium text-pq-dark-purple border border-pq-dark-purple rounded-full px-5 py-1.5 hover:bg-pq-dark-purple hover:text-white transition-colors"
           >
             Learn more
           </Link>
@@ -86,7 +86,7 @@ export function UpcomingEventsSection() {
   return (
     <section className="py-16 px-6 bg-[#f9fafb]">
       <div className="mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold text-[#1a1a2e] text-center sm:text-4xl mb-8">
+        <h2 className="text-3xl font-bold text-pq-dark-purple text-center sm:text-4xl mb-8">
           Upcoming Events
         </h2>
 
@@ -99,8 +99,8 @@ export function UpcomingEventsSection() {
               onClick={() => setActiveFilter(tab.tag)}
               className={`text-sm font-medium rounded-full px-5 py-2 border transition-colors ${
                 activeFilter === tab.tag
-                  ? "bg-[#1a1a2e] text-white border-[#1a1a2e]"
-                  : "bg-white text-[#1a1a2e] border-gray-300 hover:border-[#1a1a2e]"
+                  ? "bg-pq-dark-purple text-white border-pq-dark-purple"
+                  : "bg-white text-pq-dark-purple border-gray-300 hover:border-pq-dark-purple"
               }`}
             >
               {tab.label}
@@ -111,7 +111,7 @@ export function UpcomingEventsSection() {
         {/* Grouped by month */}
         {grouped.map((group) => (
           <div key={group.month} className="mb-10">
-            <h3 className="text-xl font-bold text-[#1a1a2e] mb-4">
+            <h3 className="text-xl font-bold text-pq-dark-purple mb-4">
               {group.month}
             </h3>
             <div className="flex flex-col gap-4">

@@ -8,7 +8,7 @@ export function EventPartners({ event }: { event: EventData }) {
   return (
     <section className="py-16 px-6 bg-[#f9fafb]">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-bold text-[#1a1a2e] sm:text-3xl mb-8">
+        <h2 className="text-2xl font-bold text-pq-dark-purple sm:text-3xl mb-8">
           Our partners
         </h2>
 
@@ -34,7 +34,7 @@ export function EventPartners({ event }: { event: EventData }) {
         <div className="flex justify-center mt-8">
           <Link
             href="/partners"
-            className="text-sm font-medium text-[#e91e8c] border border-[#e91e8c] rounded-full px-6 py-2 hover:bg-[#e91e8c] hover:text-white transition-colors"
+            className="text-sm font-medium text-pq-bright-pink border border-pq-bright-pink rounded-full px-6 py-2 hover:bg-pq-bright-pink hover:text-white transition-colors"
           >
             Learn More
           </Link>

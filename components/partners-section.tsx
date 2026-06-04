@@ -48,14 +48,14 @@ export function PartnersSection() {
             <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl font-bold text-[#1a1a2e] sm:text-4xl">
+                        <h2 className="text-3xl font-bold text-pq-dark-purple sm:text-4xl">
                             Our Partners
                         </h2>
-                        <p className="mt-6 text-[#1a1a2e] leading-relaxed max-w-lg" style={{ whiteSpace: 'pre-line' }}>
+                        <p className="mt-6 text-pq-dark-purple leading-relaxed max-w-lg" style={{ whiteSpace: 'pre-line' }}>
                             {text}
                         </p>
                         <Link href="#" className="inline-block mt-8">
-                            <button className="rounded-full px-7 py-3 text-sm font-semibold text-[#1a1a2e] transition border border-[#1a1a2e] hover:bg-primary hover:text-white hover:border-primary">
+                            <button className="rounded-full px-7 py-3 text-sm font-semibold text-pq-dark-purple transition border border-pq-dark-purple hover:bg-primary hover:text-white hover:border-primary">
                                 Learn More
                             </button>
                         </Link>

@@ -8,7 +8,7 @@ export function EventSponsors({ event }: { event: EventData }) {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-bold text-[#1a1a2e] sm:text-3xl mb-8">
+        <h2 className="text-2xl font-bold text-pq-dark-purple sm:text-3xl mb-8">
           Company challenges
         </h2>
 
@@ -31,7 +31,7 @@ export function EventSponsors({ event }: { event: EventData }) {
 
               {/* Info */}
               <div className="flex flex-col flex-1">
-                <h3 className="font-bold text-[#1a1a2e] text-lg mb-2">
+                <h3 className="font-bold text-pq-dark-purple text-lg mb-2">
                   {sponsor.name}
                 </h3>
                 <p className="text-sm text-gray-600 mb-3 leading-relaxed">
@@ -40,7 +40,7 @@ export function EventSponsors({ event }: { event: EventData }) {
                 {sponsor.url && (
                   <Link
                     href={sponsor.url}
-                    className="text-sm font-medium text-[#1a1a2e] border border-[#1a1a2e] rounded-full px-5 py-1.5 w-fit hover:bg-[#1a1a2e] hover:text-white transition-colors"
+                    className="text-sm font-medium text-pq-dark-purple border border-pq-dark-purple rounded-full px-5 py-1.5 w-fit hover:bg-pq-dark-purple hover:text-white transition-colors"
                   >
                     Learn more
                   </Link>

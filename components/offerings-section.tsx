@@ -27,10 +27,10 @@ export function OfferingsSection() {
                 {/* Glowing card on the left */}
                 <div className="relative w-full max-w-md">
                     {/* Glow effect */}
-                    <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-[#e91e8c] via-[#e91e8c]/50 to-[#e91e8c]/20 blur-[2px]" />
+                    <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-pq-bright-pink via-pq-bright-pink/50 to-pq-bright-pink/20 blur-[2px]" />
 
                     {/* Card */}
-                    <div className="relative rounded-2xl bg-[#0d1033]/90 backdrop-blur-sm border border-[#e91e8c]/30 p-8 lg:p-10">
+                    <div className="relative rounded-2xl bg-[#0d1033]/90 backdrop-blur-sm border border-pq-bright-pink/30 p-8 lg:p-10">
                         <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-8">
                             Our Project Highlights
                         </h2>
@@ -45,7 +45,7 @@ export function OfferingsSection() {
                                     <span className="text-base font-medium lg:text-lg">
                                         {offering.title}
                                     </span>
-                                    <ChevronRight className="size-5 text-[#e91e8c]" />
+                                    <ChevronRight className="size-5 text-pq-bright-pink" />
                                 </Link>
                             ))}
                         </nav>

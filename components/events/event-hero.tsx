@@ -23,7 +23,7 @@ export function EventHero({ event }: { event: EventData }) {
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url('${event.image}')` }}
             />
-            <div className="absolute inset-0 bg-[#1a1a2e]/80" />
+            <div className="absolute inset-0 bg-pq-dark-purple/80" />
 
             {/* Content */}
             <div className="relative z-10 mx-auto max-w-4xl px-6 py-16">
@@ -46,7 +46,7 @@ export function EventHero({ event }: { event: EventData }) {
                 {event.signUpUrl && (
                     <Link
                         href={event.signUpUrl}
-                        className="inline-block text-sm font-semibold text-white bg-[#e91e8c] rounded-full px-7 py-3 hover:bg-[#d11a7d] transition-colors"
+                        className="inline-block text-sm font-semibold text-white bg-pq-bright-pink rounded-full px-7 py-3 hover:bg-pq-dark-pink transition-colors"
                     >
                         Sign up
                     </Link>
