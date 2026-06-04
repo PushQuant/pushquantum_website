@@ -211,7 +211,7 @@ Tags do two things: they show as badges on the card, and they power the filter b
 The allowed values are defined by the `EventTag` type at the top of `events-data.ts`:
 
 ```ts
-"Recurring event" | "Members only" | "Sustainability" | "Entrepreneurship"
+"Recurring event" | "Members only" | "Sustainability" | "Entrepreneurship" | "Outreach" | "Professional Development" | 
 | "Community" | "Leadership" | "Hackathon" | "Conference"
 | "Bootcamp" | "Company Visit" | "Workshop"
 ```
@@ -226,7 +226,7 @@ The filter tabs are a **separate, shorter list** defined in:
 src/components/events/upcoming-events-section.tsx  →  filterTabs
 ```
 
-Currently: `All events`, `Sustainability`, `Entrepreneurship`, `Community`, `Leadership`.
+Currently: `All events`, `Community`, `Outreach`, `Professional Development`.
 
 - A tag can exist and show as a badge **without** having a filter button (e.g. `Hackathon` shows on cards but isn't a filter).
 - To make a new tag **filterable**, do both:

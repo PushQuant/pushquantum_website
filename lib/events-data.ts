@@ -16,6 +16,8 @@ export type EventTag =
     | "Sustainability"
     | "Entrepreneurship"
     | "Community"
+    | "Outreach"
+    | "Professional Develpoment"
     | "Leadership"
     | "Hackathon"
     | "Conference"
