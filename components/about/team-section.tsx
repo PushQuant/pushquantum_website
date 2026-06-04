@@ -39,17 +39,17 @@ const leadership = [
 // Department heads - all other team members
 const departmentHeads = [
     {
-        name: "Leart Zuka",
+        name: "Vibhor Singh",
         role: "IT Administration",
-        image: "/department_leads/Leart.jpg",
+        image: "/department_leads/Vib.jpeg",
         roleColor: "bg-pq-dark-purple",
-        email: "leart@pushquantum.tech",
+        email: "vibhor@pushquantum.tech",
     },
     {
         name: "Lisa Krüger",
         role: "Thinktank",
         image: "/department_leads/Lisa.jpg",
-        roleColor: "bg-pq-bright-pink",
+        roleColor: "bg-pq-dark-purple",
         email: "lisa@pushquantum.tech",
     },
     {
@@ -63,14 +63,14 @@ const departmentHeads = [
         name: "Aaron Sander",
         role: "Quantum Entrepreneurship Laboratory",
         image: "/department_leads/Aaron.JPG",
-        roleColor: "bg-[#4169e1]",
+        roleColor: "bg-pq-dark-purple",
         email: "aaron@pushquantum.tech",
     },
     {
         name: "Yichen Teresa Wang",
         role: "Legal & Finance",
         image: "/department_leads/Teresa.jpg",
-        roleColor: "bg-[#4169e1]",
+        roleColor: "bg-pq-dark-purple",
     },
     {
         name: "Eduardo Sánchez",
@@ -90,27 +90,27 @@ const departmentHeads = [
         name: "Felix Schmidt",
         role: "Head of partnerships",
         image: "/department_leads/Felix.jpg",
-        roleColor: "bg-[#4169e1]",
+        roleColor: "bg-pq-dark-purple",
         email: "felix@pushquantum.tech",
     },
     {
         name: "Niccolò Sfregola",
         role: "Head of marketing",
         image: "/department_leads/Niccolo.jpg",
-        roleColor: "bg-pq-bright-pink",
+        roleColor: "bg-pq-dark-purple",
     },
 
     {
         name: "Naman Verma",
         role: "Offerings",
         image: "/department_leads/Naman.jpg",
-        roleColor: "bg-[#4169e1]",
+        roleColor: "bg-pq-dark-purple",
     },
     {
         name: "Etay Schneider",
         role: "Offerings",
         image: "/department_leads/Etay.jpg",
-        roleColor: "bg-[#4169e1]",
+        roleColor: "bg-pq-dark-purple",
     },
 ];
 
@@ -138,28 +138,34 @@ const strategicAdvisors = [
 // Alumni - Past PushQuantum members
 const alumni = [
     {
+        name: "Leart Zuka",
+        role: "IT Administration",
+        image: "/alumnis/Leart_Zuka.jpg",
+        roleColor: "bg-yellow-500",
+    },
+    {
         name: "Ioana Milea",
         role: "Offerings",
-        image: "/department_leads/Ioana.jpg",
+        image: "/alumnis/Ioana_Milea.jpg",
         roleColor: "bg-gray-500",
     },
     {
         name: "Dimitris Vasileiadis",
         role: "Partners",
-        image: "/department_leads/Dimitros.jpg",
+        image: "/alumnis/Dimitris_Vasileiadis.jpg",
         roleColor: "bg-gray-500",
     },
     {
         name: "Emily Haworth",
         role: "Quanten(t)räume & Sustainability",
-        image: "/department_leads/Emily.jpg",
+        image: "/alumnis/Emily_Haworth.jpg",
         roleColor: "bg-gray-500",
     },
 
     {
         name: "Ginevra Fulco",
         role: "Marketing",
-        image: "/department_leads/Ginevra.png",
+        image: "/alumnis/Ginevra_Fulco.png",
         roleColor: "bg-gray-500",
     },
     {
