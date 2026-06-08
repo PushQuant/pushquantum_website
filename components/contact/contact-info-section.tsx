@@ -15,7 +15,7 @@ const contactCards = [
     {
         icon: Mail,
         title: "E-Mail",
-        lines: ["info@pushquantum.de"],
+        lines: ["hello@pushquantum.de"],
     },
 ];
 

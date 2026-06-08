@@ -51,13 +51,19 @@ const departmentHeads = [
         image: "/department_leads/Lisa.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "lisa@pushquantum.tech",
-    },
+    },   
     {
         name: "Jannik Pflieger",
         role: "Quanten(t)räume",
         image: "/department_leads/Jannik.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "jannik@pushquantum.tech",
+    }, 
+    {
+        name: "Alicia Robles Pérez",
+        role: "Thinktank",
+        image: "/department_leads/Alicia.jpg",
+        roleColor: "bg-pq-dark-purple",
     },
     {
         name: "Aaron Sander",
