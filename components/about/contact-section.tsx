@@ -94,7 +94,7 @@ export function ContactSection() {
                                 </div>
                             </div>
                             <div className="text-gray-300 text-sm">
-                                <p>info@pushquantum.tech</p>
+                                <p>hello@pushquantum.tech</p>
                             </div>
                         </div>
                     </div>

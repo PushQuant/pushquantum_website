@@ -53,6 +53,12 @@ const departmentHeads = [
         email: "lisa@pushquantum.tech",
     },
     {
+        name: "Alicia Robles Pérez",
+        role: "Thinktank",
+        image: "/department_leads/Alicia.jpg",
+        roleColor: "bg-pq-dark-purple",
+    },
+    {
         name: "Jannik Pflieger",
         role: "Quanten(t)räume",
         image: "/department_leads/Jannik.jpg",

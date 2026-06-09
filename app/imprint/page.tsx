@@ -45,8 +45,7 @@ export default function ImprintPage() {
                             Kontakt
                         </h2>
                         <p className="text-pq-dark-purple leading-relaxed">
-                            Telefon: +49 174 3815775
-                            <br />
+                            
                             {"E-Mail: "}
                             <a
                                 href="mailto:franz@pushquantum.tech"
