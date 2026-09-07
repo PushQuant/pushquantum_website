@@ -77,6 +77,7 @@ const departmentHeads = [
         role: "Legal & Finance",
         image: "/department_leads/Teresa.jpg",
         roleColor: "bg-pq-dark-purple",
+        email: "teresa@pushquantum.tech",
     },
     {
         name: "Eduardo Sánchez",
