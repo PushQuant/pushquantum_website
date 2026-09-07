@@ -15,7 +15,13 @@ function renderHeroDescription(text: string) {
     );
 }
 
-export function EventHero({ event }: { event: EventData }) {
+export function EventHero({
+    event,
+    ctaVariant = "default",
+}: {
+    event: EventData;
+    ctaVariant?: "default" | "wide-centered";
+}) {
     return (
         <section className="relative min-h-[320px] overflow-hidden pt-24">
             {/* Background image */}
@@ -43,7 +49,18 @@ export function EventHero({ event }: { event: EventData }) {
                     </p>
                 )}
 
-                {event.signUpUrl && (
+                {event.signUpUrl && ctaVariant === "wide-centered" && (
+                    <div className="flex justify-center mt-8">
+                        <Link
+                            href={event.signUpUrl}
+                            className="block w-full max-w-md text-center text-base font-semibold text-white bg-pq-bright-pink rounded-full px-10 py-4 shadow-lg shadow-pq-bright-pink/30 hover:bg-pq-dark-pink transition-colors"
+                        >
+                            Sign up
+                        </Link>
+                    </div>
+                )}
+
+                {event.signUpUrl && ctaVariant === "default" && (
                     <Link
                         href={event.signUpUrl}
                         className="inline-block text-sm font-semibold text-white bg-pq-bright-pink rounded-full px-7 py-3 hover:bg-pq-dark-pink transition-colors"

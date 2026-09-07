@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 
 const events = [
     {
-        date: { month: "OCT", day: "31" },
-        title: "PushQuantum Hackathon",
+        date: { month: "NOV", day: "20" },
+        title: "Conference + Hackathon 2026",
         description: "A 3-day challenge of full immersion in the world of quantum technologies",
-        href: "#",
+        href: "/hackathon",
     },
     {
         date: { month: "NOV", day: "02" },
