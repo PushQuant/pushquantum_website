@@ -28,7 +28,7 @@ export async function POST(request: Request) {
         // Send email using Resend
         const { data, error } = await resend.emails.send({
             from: "PushQuantum Contact Form <onboarding@resend.dev>",
-            to: ["hello@pushquantum.tech"],
+            to: ["info@pushquantum.tech"],
             replyTo: email,
             subject: `New Contact Form Submission from ${name}`,
             html: `
