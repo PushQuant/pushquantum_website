@@ -184,7 +184,7 @@ export const events: EventData[] = [
                 name: "Julius Gerheuser",
                 position: "PushQuantum",
                 image: "/department_leads/placeholder.jpg",
-                email: "info@pushquantum.tech",
+                email: "hello@pushquantum.tech",
             },
         ],
     },
