@@ -53,6 +53,13 @@ const departmentHeads = [
         email: "lisa@pushquantum.tech",
     },   
     {
+        name: "Alicia Robles Pérez",
+        role: "Thinktank",
+        image: "/department_leads/Alicia.jpg",
+        roleColor: "bg-pq-dark-purple",
+        email: "alicia@pushquantum.tech",
+    },
+    {
         name: "Jannik Pflieger",
         role: "Quanten(t)räume",
         image: "/department_leads/Jannik.jpg",
@@ -105,6 +112,7 @@ const departmentHeads = [
         role: "Head of marketing",
         image: "/department_leads/Niccolo.jpg",
         roleColor: "bg-pq-dark-purple",
+        email: "niccolo@pushquantum.tech",
     },
 
     {
@@ -112,12 +120,14 @@ const departmentHeads = [
         role: "Offerings",
         image: "/department_leads/Naman.jpg",
         roleColor: "bg-pq-dark-purple",
+        email: "naman@pushquantum.tech",
     },
     {
         name: "Etay Schneider",
         role: "Offerings",
         image: "/department_leads/Etay.jpg",
         roleColor: "bg-pq-dark-purple",
+        email: "etay@pushquantum.tech",
     },
 ];
 
