@@ -32,7 +32,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Annabelle Bohrdt",
         affiliation: "LMU Munich",
         kind: "Scientific Talk",
-        title: "Quantum Simulation",
+        title: "TBA",
         abstract: LOREM,
     },
     {
@@ -40,7 +40,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Dominik Bucher",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "Quantum Sensing",
+        title: "TBA",
         abstract: LOREM,
     },
     {
@@ -48,7 +48,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Barbara Kraus",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "Quantum Information",
+        title: "TBA",
         abstract: LOREM,
     },
     {

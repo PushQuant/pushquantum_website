@@ -3,9 +3,9 @@ import { EventHero } from "@/components/events/event-hero";
 import { HackathonTracks } from "@/components/hackathon/hackathon-tracks";
 import { EventKeyFacts } from "@/components/events/event-key-facts";
 import { EventAgenda } from "@/components/events/event-agenda";
-import { EventPartners } from "@/components/events/event-partners";
+import { HackathonPartners } from "@/components/hackathon/hackathon-partners";
 import { EventFaq } from "@/components/events/event-faq";
-import { EventContact } from "@/components/events/event-contact";
+import { HackathonContact } from "@/components/hackathon/hackathon-contact";
 import { hackathon2026 } from "@/lib/hackathon-2026-data";
 
 export const metadata: Metadata = {
@@ -24,9 +24,9 @@ export default function HackathonPage() {
             <HackathonTracks />
             <EventKeyFacts event={eventWithoutSignUp} />
             <EventAgenda event={hackathon2026} />
-            <EventPartners event={hackathon2026} />
+            <HackathonPartners event={hackathon2026} />
             <EventFaq event={eventWithoutSignUp} />
-            <EventContact event={eventWithoutSignUp} />
+            <HackathonContact event={eventWithoutSignUp} />
         </>
     );
 }

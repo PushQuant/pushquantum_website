@@ -24,7 +24,7 @@ export const hackathon2026: EventData = {
     date: "Friday 20 - Sunday 22 November, 2026",
     dateISO: "2026-11-20",
     isHighlight: true,
-    signUpUrl: "https://lnkd.in/dj_S3Efy",
+    signUpUrl: "https://forms.gle/Rawn6mojdyGaMWab7",
     heroDescription:
         "**Three days, two experiences, your choice.** Join us at the Research Campus Garching for a day of talks, science slam and networking, followed by 24 hours of turning real quantum challenges into working prototypes.",
     keyFacts: {
@@ -46,17 +46,17 @@ export const hackathon2026: EventData = {
                 { time: "9:15 - 10:00", title: "Scientific Talk (TBA)" },
                 {
                     time: "10:00 - 10:45",
-                    title: "Quantum Simulation - Prof. Dr. Annabelle Bohrdt (LMU)",
+                    title: "TBA - Prof. Dr. Annabelle Bohrdt (LMU)",
                 },
                 { time: "10:45 - 11:15", title: "Coffee Break & Speaker Meet & Greet" },
                 {
                     time: "11:15 - 12:00",
                     title:
-                        "Quantum Sensing - Prof. Dr. Dominik Bucher (TUM) / Company Speed Dating (prior registration)",
+                        "TBA - Prof. Dr. Dominik Bucher (TUM) / Company Speed Dating (prior registration)",
                 },
                 {
                     time: "12:00 - 12:45",
-                    title: "Quantum Information - Prof. Dr. Barbara Kraus (TUM)",
+                    title: "TBA - Prof. Dr. Barbara Kraus (TUM)",
                 },
                 {
                     time: "12:45 - 14:15",
@@ -104,14 +104,15 @@ export const hackathon2026: EventData = {
         },
         { name: "Aqora", logo: "/logos/partners/aquora/Aqora.png" },
         { name: "Alice & Bob", logo: "/logos/partners/alice_bob/ALICE-ET-BOB.png" },
-        { name: "Aqarios", logo: "/logos/partners/aqarios/aqarios_logo_blue_small.png" },
+        { name: "Aqarios", logo: "/logos/partners/aqarios/aqarios_logo_blue_vertical.png" },
         { name: "IQM Quantum Computers", logo: "/logos/partners/iqm/IQM_Quantum_Computers_Logo.jpg" },
+        { name: "Qoro", logo: "/logos/partners/qoro/Qoro-Quantum-Banner-600x400.png" }
     ],
     faq: [
         {
             question: "What's the difference between the Conference and the Hackathon?",
             answer:
-                "The Conference (Nov 20) is a day of talks by leading researchers and pioneers, industry x research x student networking, a Science Slam and a poster session. The Hackathon (Nov 20-22) kicks off on the afternoon of Nov 20, then teams get 24 hours to turn real-world quantum challenges from industry and research into working prototypes, with mentoring, access to quantum tech, and final demos & awards.",
+                "The Conference (Nov 20) is a day of talks by leading researchers and pioneers, industry x research x student networking, a Science Slam and a poster session. The Hackathon (Nov 20-22) kicks off on the afternoon of Nov 20, then teams get 24 hours to turn real-world quantum challenges from industry and research into working prototypes, with mentoring, access to quantum tech, and final demos & awards.\n Hackathon and conference participants will come together in the afternoon and are welcome to stay for relaxed networking into the evening.",
         },
         {
             question: "Do I have to join both the Conference and the Hackathon?",
