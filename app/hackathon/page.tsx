@@ -25,7 +25,7 @@ export default function HackathonPage() {
             <EventKeyFacts event={eventWithoutSignUp} />
             <EventAgenda event={hackathon2026} />
             <HackathonPartners event={hackathon2026} />
-            <EventFaq event={eventWithoutSignUp} />
+            <EventFaq event={eventWithoutSignUp} allowMultipleOpen />
             <HackathonContact event={eventWithoutSignUp} />
         </>
     );
