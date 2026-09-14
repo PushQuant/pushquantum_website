@@ -92,20 +92,20 @@ export const hackathon2026: EventData = {
         },
     ],
     partners: [
-        { name: "TUM Venture Labs", logo: "/placeholder.svg" },
-        { name: "Munich Quantum Valley", logo: "/placeholder.svg" },
+        { name: "TUM Venture Labs", logo: "/logos/partners/tum_vl/png/tumvl_logo_schwarz_rgb.png" },
+        { name: "Munich Quantum Valley", logo: "/logos/partners/mqv/mqv_new.png" },
         {
             name: "Munich Center for Quantum Science and Technology (MCQST)",
             logo: "/logos/partners/mcqst/MCQST_Logo_BlueBlack.png",
         },
         {
             name: "Max Planck Institute of Quantum Optics",
-            logo: "/placeholder.svg",
+            logo: "/logos/partners/mpq/mpq.png",
         },
         { name: "Aqora", logo: "/logos/partners/aquora/Aqora.png" },
-        { name: "Alice & Bob", logo: "/placeholder.svg" },
-        { name: "Aqarios", logo: "/placeholder.svg" },
-        { name: "IQM Quantum Computers", logo: "/placeholder.svg" },
+        { name: "Alice & Bob", logo: "/logos/partners/alice_bob/ALICE-ET-BOB.png" },
+        { name: "Aqarios", logo: "/logos/partners/aqarios/aqarios.png" },
+        { name: "IQM Quantum Computers", logo: "/logos/partners/iqm/IQM_Quantum_Computers_Logo.jpg" },
     ],
     faq: [
         {

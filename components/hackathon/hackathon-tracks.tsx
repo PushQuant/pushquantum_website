@@ -32,7 +32,7 @@ export function HackathonTracks() {
                             Conference
                         </p>
                         <h3 className="text-2xl font-bold text-white mb-1">Nov 20</h3>
-                        <p className="text-sm text-gray-400 mb-6">Conference only · €5</p>
+                        <p className="text-sm text-gray-400 mb-6">Conference · €5</p>
 
                         <ul className="flex flex-col gap-3 flex-1">
                             {conferenceHighlights.map((item) => (
@@ -58,7 +58,7 @@ export function HackathonTracks() {
                         </p>
                         <h3 className="text-2xl font-bold text-white mb-1">Nov 20-22</h3>
                         <p className="text-sm text-gray-400 mb-6">
-                            Hackathon only · €10 &nbsp;|&nbsp; Both events · €15
+                            Hackathon · €10 &nbsp;
                         </p>
 
                         <ul className="flex flex-col gap-3 flex-1">
@@ -71,13 +71,6 @@ export function HackathonTracks() {
                         </ul>
                     </div>
                 </div>
-
-                <p className="text-center text-sm text-gray-400 mt-8">
-                    Mandatory hackathon kick-off on the afternoon of{" "}
-                    <span className="text-white font-semibold">Nov 20</span> —
-                    24 hours of hacking follow, wrapping up{" "}
-                    <span className="text-white font-semibold">Nov 22</span>.
-                </p>
             </div>
         </section>
     );

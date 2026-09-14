@@ -22,6 +22,8 @@ export function EventHero({
     event: EventData;
     ctaVariant?: "default" | "wide-centered";
 }) {
+    const isWideCentered = ctaVariant === "wide-centered";
+
     return (
         <section className="relative min-h-[320px] overflow-hidden pt-24">
             {/* Background image */}
@@ -33,23 +35,29 @@ export function EventHero({
 
             {/* Content */}
             <div className="relative z-10 mx-auto max-w-4xl px-6 py-16">
-                <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl mb-4">
+                <h1
+                    className={`text-3xl font-bold text-white sm:text-4xl lg:text-5xl mb-4 ${isWideCentered ? "text-center" : ""}`}
+                >
                     {event.title}
                 </h1>
 
                 {event.heroDescription && (
-                    <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl mb-6">
+                    <p
+                        className={`text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl mb-6 ${isWideCentered ? "mx-auto text-center" : ""}`}
+                    >
                         {renderHeroDescription(event.heroDescription)}
                     </p>
                 )}
 
                 {!event.heroDescription && (
-                    <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl mb-6">
+                    <p
+                        className={`text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl mb-6 ${isWideCentered ? "mx-auto text-center" : ""}`}
+                    >
                         {event.shortDescription}
                     </p>
                 )}
 
-                {event.signUpUrl && ctaVariant === "wide-centered" && (
+                {event.signUpUrl && isWideCentered && (
                     <div className="flex justify-center mt-8">
                         <Link
                             href={event.signUpUrl}
