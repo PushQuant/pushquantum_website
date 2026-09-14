@@ -17,15 +17,14 @@ export interface ConferenceTalk {
     abstract: string;
 }
 
-const LOREM =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+const LOREM = "TBA";
 
 export const conferenceTalks: ConferenceTalk[] = [
     {
         time: "9:15 - 10:00",
         speaker: "Speaker to be confirmed",
         kind: "Scientific Talk",
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Topic to be confirmed",
         abstract: LOREM,
     },
     {
@@ -33,7 +32,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Annabelle Bohrdt",
         affiliation: "LMU Munich",
         kind: "Scientific Talk",
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Quantum Simulation",
         abstract: LOREM,
     },
     {
@@ -41,7 +40,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Dominik Bucher",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Quantum Sensing",
         abstract: LOREM,
     },
     {
@@ -49,7 +48,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Barbara Kraus",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Quantum Information",
         abstract: LOREM,
     },
     {
@@ -57,7 +56,7 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Ignacio Cirac",
         affiliation: "Max Planck Institute of Quantum Optics",
         kind: "Keynote",
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "TBA",
         abstract: LOREM,
     },
 ];
