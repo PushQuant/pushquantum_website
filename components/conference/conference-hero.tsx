@@ -26,10 +26,10 @@ export function ConferenceHero() {
                     Frontiers in Quantum Science and Technology
                 </h1>
                 <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl">
-                    A full day where quantum research meets real-world impact — talks
-                    from leading researchers and pioneers, a Science Slam, a poster
-                    session, and an industry meet & greet at the Research Campus
-                    Garching.
+                   The Frontiers in Quantum Science and Technology conference unites researchers and industry leaders to discuss the latest breakthroughs and emerging trends in quantum computing, sensing, communication, and simulation. It aims to bridge fundamental research with real-world applications, driving innovation at the forefront of quantum technology. 
+                <br></br>
+                <br></br>
+Whether you're a student mapping out your next steps in quantum tech or a researcher looking to connect with leading companies, FQST is where the community comes together.
                 </p>
             </div>
         </section>

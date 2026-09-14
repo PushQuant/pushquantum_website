@@ -43,20 +43,20 @@ export const hackathon2026: EventData = {
             entries: [
                 { time: "8:30 - 9:00", title: "Arrival" },
                 { time: "9:00 - 9:15", title: "Welcome" },
-                { time: "9:15 - 10:00", title: "Scientific Talk (TBC)" },
+                { time: "9:15 - 10:00", title: "Scientific Talk (TBA)" },
                 {
                     time: "10:00 - 10:45",
-                    title: "Scientific Talk - Prof. Dr. Annabelle Bohrdt (LMU)",
+                    title: "Quantum Simulation - Prof. Dr. Annabelle Bohrdt (LMU)",
                 },
                 { time: "10:45 - 11:15", title: "Coffee Break & Speaker Meet & Greet" },
                 {
                     time: "11:15 - 12:00",
                     title:
-                        "Scientific Talk - Prof. Dr. Dominik Bucher (TUM) / Company Speed Dating (prior registration)",
+                        "Quantum Sensing - Prof. Dr. Dominik Bucher (TUM) / Company Speed Dating (prior registration)",
                 },
                 {
                     time: "12:00 - 12:45",
-                    title: "Scientific Talk - Prof. Dr. Barbara Kraus (TUM)",
+                    title: "Quantum Information - Prof. Dr. Barbara Kraus (TUM)",
                 },
                 {
                     time: "12:45 - 14:15",
@@ -64,7 +64,7 @@ export const hackathon2026: EventData = {
                 },
                 { time: "14:15 - 15:45", title: "Science Slam" },
                 { time: "15:45 - 16:15", title: "Coffee Break" },
-                { time: "16:15 - 16:30", title: "PQ Talk" },
+                { time: "16:15 - 16:30", title: "PushQuantum Presentation" },
                 {
                     time: "16:30 - 17:00",
                     title: "Keynote - Prof. Dr. Ignacio Cirac (MPQ)",
@@ -104,7 +104,7 @@ export const hackathon2026: EventData = {
         },
         { name: "Aqora", logo: "/logos/partners/aquora/Aqora.png" },
         { name: "Alice & Bob", logo: "/logos/partners/alice_bob/ALICE-ET-BOB.png" },
-        { name: "Aqarios", logo: "/logos/partners/aqarios/aqarios.png" },
+        { name: "Aqarios", logo: "/logos/partners/aqarios/aqarios_logo_blue_small.png" },
         { name: "IQM Quantum Computers", logo: "/logos/partners/iqm/IQM_Quantum_Computers_Logo.jpg" },
     ],
     faq: [
