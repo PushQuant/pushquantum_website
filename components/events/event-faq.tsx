@@ -7,8 +7,25 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function EventFaq({ event }: { event: EventData }) {
+export function EventFaq({
+  event,
+  allowMultipleOpen = false,
+}: {
+  event: EventData;
+  allowMultipleOpen?: boolean;
+}) {
   if (!event.faq || event.faq.length === 0) return null;
+
+  const faqItems = event.faq.map((item, idx) => (
+    <AccordionItem key={idx} value={`faq-${idx}`}>
+      <AccordionTrigger className="text-left text-pq-dark-purple font-medium">
+        {item.question}
+      </AccordionTrigger>
+      <AccordionContent className="text-gray-600">
+        {item.answer}
+      </AccordionContent>
+    </AccordionItem>
+  ));
 
   return (
     <section className="py-16 px-6 bg-white">
@@ -17,18 +34,15 @@ export function EventFaq({ event }: { event: EventData }) {
           FAQs
         </h2>
 
-        <Accordion type="single" collapsible className="w-full">
-          {event.faq.map((item, idx) => (
-            <AccordionItem key={idx} value={`faq-${idx}`}>
-              <AccordionTrigger className="text-left text-pq-dark-purple font-medium">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {allowMultipleOpen ? (
+          <Accordion type="multiple" className="w-full">
+            {faqItems}
+          </Accordion>
+        ) : (
+          <Accordion type="single" collapsible className="w-full">
+            {faqItems}
+          </Accordion>
+        )}
 
         {event.signUpUrl && (
           <div className="flex justify-center mt-8">

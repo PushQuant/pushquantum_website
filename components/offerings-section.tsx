@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const offerings = [
     { title: "Quantum Entrepreneurship Laboratory", href: "#" },
-    { title: "Quantum Hackathon", href: "#" },
+    { title: "Quantum Hackathon", href: "/hackathon" },
     { title: "Quantentraeume", href: "#" },
     { title: "International Exchanges", href: "#" },
     { title: "Company Visits", href: "#" },

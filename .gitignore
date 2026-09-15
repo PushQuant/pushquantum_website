@@ -1,3 +1,5 @@
 node_modules/
 .next/
 .env
+2026_hackathon/
+tsconfig.tsbuildinfo
