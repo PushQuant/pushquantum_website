@@ -69,6 +69,13 @@ export function HackathonTracks() {
                                 </li>
                             ))}
                         </ul>
+
+                        <Link
+                            href="/hackathon/challenge-partners"
+                            className="block w-full text-center mt-8 text-base font-semibold text-white bg-pq-bright-pink rounded-full px-8 py-4 shadow-lg shadow-pq-bright-pink/30 hover:opacity-90 transition-opacity"
+                        >
+                            Explore the Hackathon
+                        </Link>
                     </div>
                 </div>
             </div>
