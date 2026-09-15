@@ -30,6 +30,7 @@ export function ContactForm() {
         email: "",
         phone: "",
         university: "",
+        customUniversity: "",
         message: "",
     });
     const [agreedToTerms, setAgreedToTerms] = useState(false);
@@ -60,13 +61,25 @@ export function ContactForm() {
         setErrorMessage("");
 
         try {
+            const university =
+                formData.university === "Other"
+                    ? formData.customUniversity
+                    : formData.university;
+
             const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    ...formData,
+                    name: `${formData.firstName} ${formData.lastName}`.trim(),
+                    university,
+                    inquiry: formData.message,
+                }),
             });
 
-            const data = await response.json();
+            const data = await response
+                .json()
+                .catch(() => ({ error: "Failed to send message" }));
 
             if (!response.ok) {
                 throw new Error(data.error || "Failed to send message");
@@ -79,6 +92,7 @@ export function ContactForm() {
                 email: "",
                 phone: "",
                 university: "",
+                customUniversity: "",
                 message: "",
             });
             setAgreedToTerms(false);
@@ -167,7 +181,7 @@ export function ContactForm() {
                                 <div className="flex flex-col gap-1">
                                     <Input
                                         placeholder="Enter your institution"
-                                        value={formData.university ?? ""}
+                                        value={formData.customUniversity}
                                         onChange={(e) =>
                                             setFormData((prev) => ({ ...prev, customUniversity: e.target.value }))
                                         }

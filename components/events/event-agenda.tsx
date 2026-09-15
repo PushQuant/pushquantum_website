@@ -59,15 +59,11 @@ function AgendaDayCard({ day }: { day: AgendaDay }) {
         </div>
       )}
 
-      {/* If no entries, just show description in collapsed view */}
-      {!hasEntries && day.description && (
+      {day.entries === undefined && day.description && (
         <div className="border-t border-gray-100 p-5 bg-white">
-          <p className="text-sm text-gray-600">{day.description}</p>
-          {day.entries === undefined && (
-            <span className="inline-block mt-3 text-xs font-medium text-white bg-pq-bright-pink rounded-full px-4 py-1.5">
-              Learn more
-            </span>
-          )}
+          <span className="inline-block text-xs font-medium text-white bg-pq-bright-pink rounded-full px-4 py-1.5">
+            Learn more
+          </span>
         </div>
       )}
     </div>
