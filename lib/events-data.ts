@@ -73,6 +73,7 @@ export interface EventData {
     // Individual event page
     heroDescription?: string; // supports **bold** markers
     signUpUrl?: string;
+    signUpDisabled?: boolean; // shows the sign-up button greyed out and unclickable
 
     // Key Facts
     keyFacts?: {

@@ -67,7 +67,7 @@ export const hackathon2026: EventData = {
     date: "Friday 20 - Sunday 22 November, 2026",
     dateISO: "2026-11-20",
     isHighlight: true,
-    signUpUrl: "https://forms.gle/Rawn6mojdyGaMWab7",
+    signUpUrl: "https://docs.google.com/forms/d/e/1FAIpQLScQZfBAFH1mqYaGkGaKFY_72TNoa969YvVwJaF8S1DwU2eLww/viewform",
     heroDescription:
         "**Three days, two experiences, your choice.** Join us at the Research Campus Garching for a day of talks, science slam and networking, followed by 24 hours of turning real quantum challenges into working prototypes.",
     keyFacts: {

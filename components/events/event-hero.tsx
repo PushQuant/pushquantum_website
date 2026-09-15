@@ -59,22 +59,42 @@ export function EventHero({
 
                 {event.signUpUrl && isWideCentered && (
                     <div className="flex justify-center mt-8">
-                        <Link
-                            href={event.signUpUrl}
-                            className="block w-full max-w-md text-center text-base font-semibold text-white bg-pq-bright-pink rounded-full px-10 py-4 shadow-lg shadow-pq-bright-pink/30 hover:bg-pq-dark-pink transition-colors"
-                        >
-                            Sign up
-                        </Link>
+                        {event.signUpDisabled ? (
+                            <span
+                                aria-disabled="true"
+                                title="Sign up is temporarily unavailable"
+                                className="block w-full max-w-md text-center text-base font-semibold text-gray-400 bg-gray-200 rounded-full px-10 py-4 cursor-not-allowed select-none"
+                            >
+                                Sign up
+                            </span>
+                        ) : (
+                            <Link
+                                href={event.signUpUrl}
+                                className="block w-full max-w-md text-center text-base font-semibold text-white bg-pq-bright-pink rounded-full px-10 py-4 shadow-lg shadow-pq-bright-pink/30 hover:bg-pq-dark-pink transition-colors"
+                            >
+                                Sign up
+                            </Link>
+                        )}
                     </div>
                 )}
 
                 {event.signUpUrl && ctaVariant === "default" && (
-                    <Link
-                        href={event.signUpUrl}
-                        className="inline-block text-sm font-semibold text-white bg-pq-bright-pink rounded-full px-7 py-3 hover:bg-pq-dark-pink transition-colors"
-                    >
-                        Sign up
-                    </Link>
+                    event.signUpDisabled ? (
+                        <span
+                            aria-disabled="true"
+                            title="Sign up is temporarily unavailable"
+                            className="inline-block text-sm font-semibold text-gray-400 bg-gray-200 rounded-full px-7 py-3 cursor-not-allowed select-none"
+                        >
+                            Sign up
+                        </span>
+                    ) : (
+                        <Link
+                            href={event.signUpUrl}
+                            className="inline-block text-sm font-semibold text-white bg-pq-bright-pink rounded-full px-7 py-3 hover:bg-pq-dark-pink transition-colors"
+                        >
+                            Sign up
+                        </Link>
+                    )
                 )}
             </div>
         </section>
