@@ -25,35 +25,28 @@ export interface ChallengePartner {
     name: string;
     logo: string;
     description: string;
-    challenge: string;
 }
-
-const CHALLENGE_TBA = "Challenge details to be announced closer to the event.";
 
 export const challengePartners: ChallengePartner[] = [
     {
         name: "Aqarios",
         logo: "/logos/partners/aqarios/aqarios_logo_blue_vertical.png",
         description: "Quantum software company building optimization solutions for industry.",
-        challenge: CHALLENGE_TBA,
     },
     {
         name: "Alice & Bob",
         logo: "/logos/partners/alice_bob/ALICE-ET-BOB.png",
         description: "Hardware company building fault-tolerant quantum computers from cat qubits.",
-        challenge: CHALLENGE_TBA,
     },
     {
         name: "IQM Quantum Computers",
         logo: "/logos/partners/iqm/IQM_Quantum_Computers_Logo.jpg",
         description: "Superconducting quantum computer manufacturer for research and industry.",
-        challenge: CHALLENGE_TBA,
     },
     {
         name: "Qoro",
         logo: "/logos/partners/qoro/Qoro-Quantum-Banner-600x400.png",
         description: "Distributed quantum computing software for scaling quantum applications.",
-        challenge: CHALLENGE_TBA,
     },
 ];
 

@@ -33,8 +33,7 @@ export function HackathonChallengeHero() {
                     <br />
                     <br />
                     Challenges are presented live at the mandatory kick-off on the
-                    afternoon of November 20 — full briefs are announced closer to the
-                    event.
+                    afternoon of November 20.
                 </p>
             </div>
         </section>
