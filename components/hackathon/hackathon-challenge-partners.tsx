@@ -5,13 +5,9 @@ export function HackathonChallengePartners() {
     return (
         <section className="py-16 px-6 bg-white">
             <div className="mx-auto max-w-3xl">
-                <h2 className="text-2xl font-bold text-pq-dark-purple sm:text-3xl mb-2">
+                <h2 className="text-2xl font-bold text-pq-dark-purple sm:text-3xl mb-8">
                     Meet the challenge partners
                 </h2>
-                <p className="text-gray-600 mb-8">
-                    Challenge briefs below are placeholders and will be updated as
-                    partners confirm them.
-                </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {challengePartners.map((partner) => (
@@ -31,13 +27,9 @@ export function HackathonChallengePartners() {
                             <h3 className="font-bold text-pq-dark-purple mb-1">
                                 {partner.name}
                             </h3>
-                            <p className="text-gray-600 text-sm mb-3">
+                            <p className="text-gray-600 text-sm">
                                 {partner.description}
                             </p>
-                            <p className="text-xs font-semibold uppercase tracking-widest text-pq-bright-pink mb-1">
-                                Challenge
-                            </p>
-                            <p className="text-gray-500 text-sm">{partner.challenge}</p>
                         </div>
                     ))}
                 </div>
