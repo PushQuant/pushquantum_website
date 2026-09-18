@@ -125,6 +125,9 @@ const departmentHeads = [
     },
 ];
 
+// Temporarily hidden while the club decides whether to keep this section; data kept for an easy return.
+const SHOW_STRATEGIC_ADVISORS = false;
+
 const strategicAdvisors = [
     {
         name: "Alexander Orlov",
@@ -426,17 +429,19 @@ export function TeamSection() {
                         <TeamMemberCard key={member.name} member={member} />
                     ))}
                 </div>
-                {/* Strategic Advisors */}
-                <div className="mt-20">
-                    <h2 className="text-2xl font-bold text-pq-dark-purple text-center sm:text-4xl mb-12">
-                        PushQuantum Strategic Advisors
-                    </h2>
-                    <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
-                        {strategicAdvisors.map((member) => (
-                            <TeamMemberCard key={member.name} member={member} size="large" />
-                        ))}
+                {/* Strategic Advisors - temporarily hidden, may return later */}
+                {SHOW_STRATEGIC_ADVISORS && (
+                    <div className="mt-20">
+                        <h2 className="text-2xl font-bold text-pq-dark-purple text-center sm:text-4xl mb-12">
+                            PushQuantum Strategic Advisors
+                        </h2>
+                        <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
+                            {strategicAdvisors.map((member) => (
+                                <TeamMemberCard key={member.name} member={member} size="large" />
+                            ))}
+                        </div>
                     </div>
-                </div>
+                )}
 
 
             </div>
