@@ -64,7 +64,7 @@ export const hackathon2026: EventData = {
     heroDescription:
         "**Three days, two experiences, your choice.** Join us at the Research Campus Garching for a day of talks, science slam and networking, followed by 24 hours of turning real quantum challenges into working prototypes.",
     keyFacts: {
-        when: "Friday 20 - Sunday 22 November 2026. Early bird registration benefits: Sep 15-30. Science Slam video applications: Sep 15-Oct 31.",
+        when: "Friday 20 - Sunday 22 November 2026. Early bird registration benefits: Sep 15- Oct 09. Science Slam video applications: Sep 15-Oct 31.",
         where: "Munich / Research Campus Garching",
         forWhom:
             "Master's and PhD students planning their next step in quantum tech, plus researchers and tech enthusiasts of all backgrounds. Choose the Conference, the Hackathon, or both.",
