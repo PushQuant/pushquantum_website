@@ -32,8 +32,10 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Annabelle Bohrdt",
         affiliation: "LMU Munich",
         kind: "Scientific Talk",
-        title: "TBA",
-        abstract: LOREM,
+        title:
+            "Neural Quantum State for strongly correlated two-dimensional systems: what we have learned so far",
+        abstract:
+            "Numerically simulating two-dimensional strongly correlated systems is in general a daunting task. In recent years, neural quantum states have been emerged as a promising new tool: here, the expressivity of a neural network is used to represent the quantum many-body state of interest. In this talk I will introduce the basics of neural quantum states and discuss our current understanding of their capabilities regarding common measures such as entanglement, routes towards interpretability, and possible design choices. I will highlight some of our recent results on applying neural quantum states to strongly interacting electronic systems relevant for unconventional superconductivity, showcasing how we can use this novel technique to simulate increasingly realistic models for quantum materials.",
     },
     {
         time: "11:15 - 12:00",
