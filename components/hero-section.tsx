@@ -1,5 +1,6 @@
 import { Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
+import { MEMBERSHIP_FORM_URL } from "@/lib/site-links";
 
 export function HeroSection() {
     return (
@@ -21,9 +22,14 @@ export function HeroSection() {
 
                         {/* CTA BUTTONS */}
                         <div className="mt-8 flex items-center gap-4">
-                            <button className="rounded-full bg-pink-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-pink-400">
+                            <a
+                                href={MEMBERSHIP_FORM_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="rounded-full bg-pink-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-pink-400"
+                            >
                                 Join Us
-                            </button>
+                            </a>
 
                             <button className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
                                 Learn More

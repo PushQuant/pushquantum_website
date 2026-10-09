@@ -4,6 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { MEMBERSHIP_FORM_URL } from "@/lib/site-links";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -53,7 +54,9 @@ export function Header() {
                     </div>
 
                     <div className="hidden lg:block">
-                        <Button className="rounded-full px-6 bg-pq-bright-pink">Join Us</Button>
+                        <Button asChild className="rounded-full px-6 bg-pq-bright-pink">
+                            <a href={MEMBERSHIP_FORM_URL} target="_blank" rel="noopener noreferrer">Join Us</a>
+                        </Button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -81,7 +84,9 @@ export function Header() {
                                     {link.label}
                                 </Link>
                             ))}
-                            <Button className="rounded-full w-fit mt-2 bg-pq-bright-pink">Join Us</Button>
+                            <Button asChild className="rounded-full w-fit mt-2 bg-pq-bright-pink">
+                                <a href={MEMBERSHIP_FORM_URL} target="_blank" rel="noopener noreferrer">Join Us</a>
+                            </Button>
                         </div>
                     </div>
                 )}
