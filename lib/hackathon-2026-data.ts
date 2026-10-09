@@ -25,6 +25,17 @@ export interface ChallengePartner {
     name: string;
     logo: string;
     description: string;
+    /** Paragraphs about the company, shown when the card is expanded. */
+    details?: string[];
+    /** Partner website, linked below the details. */
+    website?: string;
+    /** The partner's contact person, shown below the details. */
+    contact?: {
+        name: string;
+        image: string;
+        /** Paragraphs of the contact's self-introduction. */
+        intro: string[];
+    };
 }
 
 export const challengePartners: ChallengePartner[] = [
@@ -42,11 +53,34 @@ export const challengePartners: ChallengePartner[] = [
         name: "IQM Quantum Computers",
         logo: "/logos/partners/iqm/IQM_Quantum_Computers_Logo.jpg",
         description: "Superconducting quantum computer manufacturer for research and industry.",
+        details: [
+            "IQM is a global leader in building quantum computers. IQM provides on-premises quantum computers for supercomputing centres, enterprises, and research labs and offers full access to its hardware. IQM also has a quantum computing cloud offering “IQM Resonance.”",
+            "IQM’s commercial quantum computers include Finland’s ongoing commercial 50-qubit quantum computer co-development project with VTT, IQM-led consortium’s (Q-Exa) HPC quantum accelerator in Germany, and IQM processors will also be used in the first quantum accelerator in Spain.",
+            "IQM has over 300+ employees, with offices in Espoo, Madrid, Munich, Palo Alto, Paris, Singapore, and Warsaw.",
+        ],
+        website: "https://www.iqm.tech",
+        contact: {
+            name: "Niklas",
+            image: "/images/hackathon/challenge-partners/iqm-niklas.jpg",
+            intro: [
+                "Hi, I’m Niklas! I started working in quantum computing four years ago, when I was hired by Fraunhofer FOKUS in Berlin to work on the Quantum SDK Qrisp. Since then, I have developed multiple algorithms as well as core modules of Qrisp, co-authored papers, and presented research at conferences. If you developed with Qrisp before you might have already stumbled across some of my work!",
+                "Since then I moved on to a community focused role at IQM, where I support everybody that works with the tools in the IQM ecosystem.",
+                "Everything we do here is to support you, our community members get the most out of IQM ecosystem and to learn and develop together!",
+                "Join us on this journey!",
+            ],
+        },
     },
     {
         name: "Qoro",
         logo: "/logos/partners/qoro/Qoro-Quantum-Banner-600x400.png",
         description: "Distributed quantum computing software for scaling quantum applications.",
+        contact: {
+            name: "Dr. Stephen DiAdamo",
+            image: "/images/hackathon/challenge-partners/qoro-stephen.png",
+            intro: [
+                "Dr. Stephen DiAdamo is the CTO and Co-Founder of Qoro Quantum. With a deep focus on quantum software, computing infrastructure, and tech innovation, Stephen leads Qoro Quantum’s technical strategy to make quantum computing accessible and impactful. He is passionate about supporting emerging developers and fostering the next wave of deep-tech innovation.",
+            ],
+        },
     },
 ];
 
