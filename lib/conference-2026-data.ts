@@ -42,8 +42,9 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Dominik Bucher",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "TBA",
-        abstract: LOREM,
+        title: "Optically Addressable Spins: From Solid-State Materials to Biochemical Systems",
+        abstract:
+            "Optically addressable spins have emerged as one of the key platforms for quantum technologies. In my talk, I will provide an overview of the field, starting with established solid-state systems such as the nitrogen-vacancy center in diamond and the boron-vacancy center in hexagonal boron nitride. I will then move beyond conventional materials to discuss recent advances in optically addressable spins in biological systems, including proteins and DNA. The talk will also address possible applications of these systems.",
     },
     {
         time: "12:00 - 12:45",
