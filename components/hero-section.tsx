@@ -1,6 +1,10 @@
 import { Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
-import { MEMBERSHIP_FORM_URL } from "@/lib/site-links";
+import {
+    INSTAGRAM_URL,
+    LINKEDIN_URL,
+    MEMBERSHIP_FORM_URL,
+} from "@/lib/site-links";
 
 export function HeroSection() {
     return (
@@ -39,14 +43,18 @@ export function HeroSection() {
                         {/* SOCIALS */}
                         <div className="mt-10 flex gap-5 text-white/80">
                             <a
-                                href="#"
+                                href={INSTAGRAM_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="transition hover:text-white"
                                 aria-label="Instagram"
                             >
                                 <Instagram size={20} />
                             </a>
                             <a
-                                href="#"
+                                href={LINKEDIN_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="transition hover:text-white"
                                 aria-label="LinkedIn"
                             >

@@ -1,6 +1,7 @@
 
 import { MessageSquare, Mail, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { INSTAGRAM_URL, LINKEDIN_URL } from "@/lib/site-links";
 
 const contactCards = [
     {
@@ -23,12 +24,12 @@ const socialCards = [
     {
         icon: Instagram,
         title: "Instagram",
-        href: "https://www.instagram.com/pushquantum_ev/",
+        href: INSTAGRAM_URL,
     },
     {
         icon: Linkedin,
         title: "LinkedIn",
-        href: "https://www.linkedin.com/company/push-quantum/",
+        href: LINKEDIN_URL,
     },
 ];
 
