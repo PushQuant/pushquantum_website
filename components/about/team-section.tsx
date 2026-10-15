@@ -161,7 +161,7 @@ const alumni = [
         name: "Leart Zuka",
         role: "IT Administration",
         image: "/alumnis/Leart_Zuka.jpg",
-        roleColor: "bg-pq-dark-purple",
+        roleColor: "bg-gray-500",
     },
     {
         name: "Ioana Milea",
