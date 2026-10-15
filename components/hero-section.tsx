@@ -1,5 +1,6 @@
 import { Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import {
     INSTAGRAM_URL,
     LINKEDIN_URL,
@@ -35,9 +36,12 @@ export function HeroSection() {
                                 Join Us
                             </a>
 
-                            <button className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                            <Link
+                                href="/about"
+                                className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                            >
                                 Learn More
-                            </button>
+                            </Link>
                         </div>
 
                         {/* SOCIALS */}
