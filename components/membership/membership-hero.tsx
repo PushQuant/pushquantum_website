@@ -18,14 +18,12 @@ export function MembershipHero() {
           {/* Right - Image */}
           <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden">
             <Image
-              src="/images/membership-hero.jpg"
-              alt="PushQuantum team members"
+              src="/images/members_membership_hack_group.jpg"
+              alt="PushQuantum members at the quantum hackathon"
               fill
               className="object-cover"
               priority
             />
-            {/* Placeholder gradient if image missing */}
-            <div className="absolute inset-0 bg-gradient-to-br from-pq-bright-pink/20 to-[#4169e1]/20" />
           </div>
         </div>
       </div>
