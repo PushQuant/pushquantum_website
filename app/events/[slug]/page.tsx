@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { EventHero } from "@/components/events/event-hero";
 import { EventKeyFacts } from "@/components/events/event-key-facts";
+import { EventGallery } from "@/components/events/event-gallery";
 import { EventAgenda } from "@/components/events/event-agenda";
 import { EventSponsors } from "@/components/events/event-sponsors";
 import { EventPartners } from "@/components/events/event-partners";
@@ -48,6 +49,7 @@ export default async function EventPage({
         <>
             <EventHero event={event} />
             <EventKeyFacts event={event} />
+            <EventGallery event={event} />
             <EventAgenda event={event} />
             <EventSponsors event={event} />
             <EventPartners event={event} />

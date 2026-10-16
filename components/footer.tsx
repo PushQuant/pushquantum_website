@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
+import { INSTAGRAM_URL, LINKEDIN_URL } from "@/lib/site-links";
 
 const footerLinks = {
 
@@ -46,7 +47,7 @@ export function Footer() {
                             innovation
                         </p>
                         <Link
-                            href="https://linkedin.com"
+                            href={LINKEDIN_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center w-10 h-10 mt-6 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
@@ -55,7 +56,7 @@ export function Footer() {
                             <Linkedin className="size-5" />
                         </Link>
                         <Link
-                            href="https://instagram.com"
+                            href={INSTAGRAM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center w-10 h-10 mt-6 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"

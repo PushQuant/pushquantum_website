@@ -17,7 +17,22 @@ export function EventKeyFacts({ event }: { event: EventData }) {
           {facts.when && (
             <div>
               <h3 className="font-bold text-pq-dark-purple">When?</h3>
-              <p className="text-gray-600 mt-1">{facts.when}</p>
+              <p className="text-gray-600 mt-1">
+                {facts.when}
+                {facts.whenLink && (
+                  <>
+                    {" — "}
+                    <Link
+                      href={facts.whenLink.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-pq-dark-purple underline underline-offset-2 hover:text-pq-bright-pink"
+                    >
+                      {facts.whenLink.label}
+                    </Link>
+                  </>
+                )}
+              </p>
             </div>
           )}
 
@@ -38,7 +53,7 @@ export function EventKeyFacts({ event }: { event: EventData }) {
           {facts.whatToExpect && (
             <div>
               <h3 className="font-bold text-pq-dark-purple">What to expect?</h3>
-              <p className="text-gray-600 mt-1">{facts.whatToExpect}</p>
+              <p className="text-gray-600 mt-1 whitespace-pre-line">{facts.whatToExpect}</p>
             </div>
           )}
         </div>

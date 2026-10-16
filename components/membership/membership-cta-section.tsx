@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { MEMBERSHIP_FORM_URL } from "@/lib/site-links";
 
 export function MembershipCTASection() {
     return (
@@ -12,12 +12,18 @@ export function MembershipCTASection() {
                     Join PushQuantum today and unlock your potential in the world of quantum technology.
                 </p>
                 <div className="mt-8">
-                    {/* TODO: ADD GOOGLE FORMS LINK HERE */}
-                    <Link href="#join">
-                        <Button className="rounded-full bg-pq-bright-pink hover:bg-pq-dark-pink text-white px-8 py-3 text-lg">
+                    <Button
+                        asChild
+                        className="rounded-full bg-pq-bright-pink hover:bg-pq-dark-pink text-white px-8 py-3 text-lg"
+                    >
+                        <a
+                            href={MEMBERSHIP_FORM_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Become a Member
-                        </Button>
-                    </Link>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

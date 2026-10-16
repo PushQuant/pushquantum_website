@@ -50,8 +50,8 @@ export function AboutSection() {
                             <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
                                 <div className="text-center">
                                     <Image
-                                        src="/images/community_landing_page_image.jpg"
-                                        alt="Community group photo"
+                                        src="/images/main_about_us_ibm_zurich.JPG"
+                                        alt="PushQuantum members visiting IBM Research Zurich"
                                         fill
                                         className="object-cover rounded-sm"
                                         priority

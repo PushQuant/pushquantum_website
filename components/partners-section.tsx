@@ -21,7 +21,7 @@ const partners = [
     },
     {
         name: "Aqora",
-        logo: "/logos/partners/aquora/Aquora.svg",
+        logo: "/logos/partners/aquora/Aqora.png",
     },
     {
         name: "BMFTR",
@@ -123,4 +123,3 @@ export function PartnersSection() {
         </section>
     );
 }
-

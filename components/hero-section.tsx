@@ -1,6 +1,11 @@
 import { Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
-import { MEMBERSHIP_FORM_URL } from "@/lib/site-links";
+import Link from "next/link";
+import {
+    INSTAGRAM_URL,
+    LINKEDIN_URL,
+    MEMBERSHIP_FORM_URL,
+} from "@/lib/site-links";
 
 export function HeroSection() {
     return (
@@ -31,22 +36,29 @@ export function HeroSection() {
                                 Join Us
                             </a>
 
-                            <button className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                            <Link
+                                href="/about"
+                                className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                            >
                                 Learn More
-                            </button>
+                            </Link>
                         </div>
 
                         {/* SOCIALS */}
                         <div className="mt-10 flex gap-5 text-white/80">
                             <a
-                                href="#"
+                                href={INSTAGRAM_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="transition hover:text-white"
                                 aria-label="Instagram"
                             >
                                 <Instagram size={20} />
                             </a>
                             <a
-                                href="#"
+                                href={LINKEDIN_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="transition hover:text-white"
                                 aria-label="LinkedIn"
                             >

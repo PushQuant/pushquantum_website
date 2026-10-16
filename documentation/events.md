@@ -93,6 +93,7 @@ The single-event page is assembled from these optional blocks **in this order**.
 | `heroDescription` | The hero paragraph (supports **bold**, see below) | falls back to `shortDescription` |
 | `signUpUrl` | "Sign up" buttons (hero, key facts, FAQ, contact) | omitted |
 | `keyFacts` | The "Key facts" block (When / Where / For whom / What to expect) | field omitted |
+| `gallery` | An "Event impressions" photo grid | field omitted or empty |
 | `agenda` | The "Agenda" accordion | field omitted or empty |
 | `sponsors` | The "Company challenges" block | field omitted or empty |
 | `partners` | The "Our partners" logo strip | field omitted or empty |
@@ -117,10 +118,31 @@ All four sub-fields are optional; only the ones you provide are shown.
 ```ts
 keyFacts: {
     when: "29 November - 1 December 2024",
+    whenLink: {
+        label: "Join our newsletter",
+        url: "https://example.com/newsletter",
+    }, // optional
     where: "Garching Research Campus, Munich",
     forWhom: "Students from all universities.",
     whatToExpect: "Lab tours, a company fair, and 24h of hacking.",
 },
+```
+
+### `gallery`
+
+Add extra photos to the event detail page. The main `image` remains the hero image.
+
+```ts
+gallery: [
+    {
+        src: "/images/events/event-audience.jpg",
+        alt: "Audience listening to a scientific talk",
+    },
+    {
+        src: "/images/events/event-speaker.jpg",
+        alt: "Speaker presenting at the event",
+    },
+],
 ```
 
 ### `agenda`

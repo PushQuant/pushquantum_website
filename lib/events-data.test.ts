@@ -21,6 +21,8 @@ const VALID_TAGS: EventTag[] = [
     "Sustainability",
     "Entrepreneurship",
     "Community",
+    "Outreach",
+    "Professional Develpoment",
     "Leadership",
     "Hackathon",
     "Conference",
@@ -163,6 +165,19 @@ describe.each(events.map((e) => [e.slug, e] as const))(
                 if (v !== undefined)
                     expect(isNonEmptyString(v), `keyFacts.${k} must be non-empty`).toBe(true);
             }
+            if (event.keyFacts.whenLink) {
+                expect(isNonEmptyString(event.keyFacts.whenLink.label)).toBe(true);
+                expect(isNonEmptyString(event.keyFacts.whenLink.url)).toBe(true);
+            }
+        });
+
+        it("has a valid gallery (if present)", () => {
+            if (!event.gallery) return;
+            expect(Array.isArray(event.gallery)).toBe(true);
+            for (const photo of event.gallery) {
+                expect(isPublicPath(photo.src), "gallery image must start with /").toBe(true);
+                expect(isNonEmptyString(photo.alt), "gallery image needs alt text").toBe(true);
+            }
         });
 
         it("has a valid agenda (if present)", () => {
@@ -247,4 +262,14 @@ describe("events-data: image files exist in /public", () => {
             expect(fs.existsSync(abs), `missing image file: public/${rel}`).toBe(true);
         }
     );
+
+    it("finds every gallery image", () => {
+        for (const event of events) {
+            for (const photo of event.gallery ?? []) {
+                const rel = photo.src.replace(/^\//, "");
+                const abs = path.join(PUBLIC_DIR, rel);
+                expect(fs.existsSync(abs), `missing gallery image: public/${rel}`).toBe(true);
+            }
+        }
+    });
 });

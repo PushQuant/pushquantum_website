@@ -61,10 +61,17 @@ const departmentHeads = [
     },
     {
         name: "Jannik Pflieger",
-        role: "Quanten(t)räume",
+        role: "Outreach",
         image: "/department_leads/Jannik.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "jannik@pushquantum.tech",
+    },
+    {
+        name: "Elena",
+        role: "Outreach",
+        image: "/department_leads/Elena.png",
+        roleColor: "bg-pq-dark-purple",
+        email: "elena@pushquantum.tech",
     },
     {
         name: "Aaron Sander",
@@ -116,13 +123,6 @@ const departmentHeads = [
         roleColor: "bg-pq-dark-purple",
         email: "naman@pushquantum.tech",
     },
-    {
-        name: "Etay Schneider",
-        role: "Offerings",
-        image: "/department_leads/Etay.jpg",
-        roleColor: "bg-pq-dark-purple",
-        email: "etay@pushquantum.tech",
-    },
 ];
 
 // Temporarily hidden while the club decides whether to keep this section; data kept for an easy return.
@@ -152,10 +152,16 @@ const strategicAdvisors = [
 // Alumni - Past PushQuantum members
 const alumni = [
     {
+        name: "Etay Schneider",
+        role: "Offerings",
+        image: "/department_leads/Etay.jpg",
+        roleColor: "bg-gray-500",
+    },
+    {
         name: "Leart Zuka",
         role: "IT Administration",
         image: "/alumnis/Leart_Zuka.jpg",
-        roleColor: "bg-yellow-500",
+        roleColor: "bg-gray-500",
     },
     {
         name: "Ioana Milea",
@@ -486,4 +492,3 @@ export function TeamSection() {
         </section>
     );
 }
-

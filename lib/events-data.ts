@@ -4,10 +4,6 @@
 // `events` array following the EventData type structure.
 //
 // NOTE ON IMAGES:
-// All events currently point to the quantum-themed placeholder
-// images in /public/images/events/ (placeholder-quantum-*.png).
-// Swap the `image` field for a real photo whenever one is
-// available — everything else will keep working.
 // ============================================================
 
 export type EventTag =
@@ -78,10 +74,20 @@ export interface EventData {
     // Key Facts
     keyFacts?: {
         when?: string;
+        whenLink?: {
+            label: string;
+            url: string;
+        };
         where?: string;
         forWhom?: string;
         whatToExpect?: string;
     };
+
+    // Additional photos shown on the event detail page.
+    gallery?: {
+        src: string;
+        alt: string;
+    }[];
 
     // Agenda
     agenda?: AgendaDay[];
@@ -122,7 +128,7 @@ export const events: EventData[] = [
         title: "Quantum Entrepreneurship Laboratory",
         shortDescription:
             "A project-based course that brings together students from different backgrounds to work on industry-relevant quantum computing problems and pitch them as commercial products.",
-        image: PH3,
+        image: "/images/events/events_QEL_Demo_Day.webp",
         tags: ["Recurring event", "Entrepreneurship"],
         date: "Each semester",
         dateISO: "2026-04-01",
@@ -195,7 +201,7 @@ export const events: EventData[] = [
         title: "PushQuantum Hackathon 2025",
         shortDescription:
             "One weekend of quantum innovation in Munich. 100+ students and industry experts solving real-world quantum challenges on real quantum hardware.",
-        image: PH1,
+        image: "/images/events/events_hack2025_hack_group - copia.jpg",
         tags: ["Hackathon", "Entrepreneurship"],
         date: "Friday 28 - Sunday 30 November, 2025",
         dateISO: "2025-11-28",
@@ -308,7 +314,7 @@ export const events: EventData[] = [
         title: "Frontier Tech Conference 2025",
         shortDescription:
             "PushQuantum x The Entrepreneurial Group brought together 100+ students, founders, and industry leaders to exchange insights on deep-tech entrepreneurship.",
-        image: PH2,
+        image: "/images/events/events_frontiertech.png",
         tags: ["Conference", "Entrepreneurship"],
         date: "Wednesday 10 December, 2025",
         dateISO: "2025-12-10",
@@ -375,35 +381,66 @@ export const events: EventData[] = [
     // ---- UPCOMING / RECURRING OFFERINGS ----
     // ============================================================
     {
-        slug: "leadership-series",
-        title: "Leadership Series",
+        slug: "journal-club-seminar",
+        title: "Journal Club / Seminar",
         shortDescription:
-            "Career talks from various leaders across different fields of quantum, sharing their journeys and advice for future innovators.",
-        image: PH4,
-        tags: ["Recurring event", "Leadership"],
-        date: "Recurring event",
-        dateISO: "2026-02-01",
-        signUpUrl: "https://pushquantum.tech/leadership-in-quantum",
+            "An interdisciplinary series of talks discussing experimental and theoretical physics and hosting speakers from both academia and industry.",
+        image: "/images/events/events_seminar1.JPG",
+        tags: ["Recurring event", "Community"],
+        date: "Thursday 22 October, 2026",
+        dateISO: "2026-10-22",
+        heroDescription:
+            "An interdisciplinary series of talks on **Quantum Science and Technology, Condensed Matter, and Quantum Computing**, discussing both experimental and theoretical physics, hosting speakers from both academia and industry.",
+        signUpUrl: "https://pushquantum.substack.com/",
+        keyFacts: {
+            when: "Thursday, 22 October 2026",
+            whenLink: {
+                label: "Join our newsletter",
+                url: "https://pushquantum.substack.com/",
+            },
+            where: "ZQE Zentrum für Quantum Engineering, Garching-Forschungszentrum",
+            forWhom:
+                "Master’s and PhD students interested in the latest scientific discoveries in quantum.",
+            whatToExpect:
+                "Bi-weekly talks by leading scientists, followed by Q&A and in-depth scientific discussions. Previous speakers include Prof. Monika Aidelsburger, Prof. Rahul Trivedi, Prof. Michael Knapp, Prof. Jan von Delft, and Prof. Johannes Knolle. We offer coffee and snacks for all participants!",
+        },
+        gallery: [
+            {
+                src: "/images/events/events_seminar2.jpg",
+                alt: "Journal Club participants attending a scientific talk",
+            },
+            {
+                src: "/images/events/events_seminar3.jpg",
+                alt: "Speaker presenting at a PushQuantum seminar",
+            },
+        ],
     },
 
+    // ============================================================
+    // ---- PAST EVENTS ----
+    // ============================================================
     {
-        slug: "qiskit-bootcamp",
-        title: "Qiskit Bootcamp",
+        slug: "school-visits",
+        title: "School Visits",
         shortDescription:
-            "A beginner-friendly, community-driven introduction to quantum computing with Qiskit — talks, workshops, a mini-challenge and a career session, run as part of the global Qiskit Fall Fest.",
-        image: PH1,
-        tags: ["Recurring event", "Bootcamp", "Community"],
-        date: "Recurring event",
-        dateISO: "2026-01-15",
+            "For our latest school visit, Katharinen-Gymnasium in Ingolstadt welcomed PushQuantum to run a workshop with its 10th- and 11th-grade students.",
+        image: "/images/events/events_schools1.jpg",
+        tags: ["Outreach"],
+        date: "22 May, 2026",
+        dateISO: "2026-05-22",
+        isPast: true,
         heroDescription:
-            "A compact, beginner-friendly and community-driven introduction to quantum computing with **Qiskit**. Get a fast intro, a bite-sized challenge, and a career session — plus time to meet peers.",
-        signUpUrl: "https://pushquantum.tech/qiskit_fall_fest_2025",
+            "Katharinen-Gymnasium in Ingolstadt welcomed PushQuantum to run a **quantum workshop** with its 10th- and 11th-grade students.",
         keyFacts: {
-            forWhom:
-                "Students, researchers, developers and everyone else. Beginner-friendly (basic Python helpful).",
             whatToExpect:
-                "Quantum & Qiskit 101, networking, a guided mini challenge, and a career talk. IBM participation certificates provided.",
+                "Share your passion and knowledge of quantum science with schoolchildren and teenagers.\n\nFirst, the students attended an introductory talk on quantum mechanics, where they learned about quantum superposition and entanglement.\n\nLater, they were divided into two groups. One played our traditional quantum games—including Quantum Tic-Tac-Toe, Quantum Labyrinth and Quantum Race 🤸—while the other played qubit bingo and explored different quantum-computing platforms.",
         },
+        gallery: [
+            {
+                src: "/images/events/events_schools2.jpg",
+                alt: "PushQuantum school workshop about quantum science",
+            },
+        ],
     },
 
     {
@@ -411,34 +448,74 @@ export const events: EventData[] = [
         title: "Company Visits",
         shortDescription:
             "PushQuantum's Start-up & Company Visit series — explore quantum companies and research centers, hear presentations, and connect with teams over drinks and snacks.",
-        image: PH3,
+        image: "/images/events/events_companyvisits_2.jpg",
         tags: ["Recurring event", "Members only", "Company Visit"],
-        date: "Recurring event",
+        date: "March 2026",
         dateISO: "2026-03-01",
-        signUpUrl: "https://pushquantum.tech/company-visits",
+        isPast: true,
     },
 
     {
-        slug: "seminar-quantum-tuesday",
-        title: "Seminar — Quantum Tuesday",
+        slug: "leadership-series",
+        title: "Leadership Series",
         shortDescription:
-            "A recurring seminar series where PushQuantum members and guests present quantum science and technology topics in an accessible format.",
-        image: PH2,
-        tags: ["Recurring event", "Community"],
-        date: "Recurring event",
-        dateISO: "2026-02-15",
-        signUpUrl: "https://pushquantum.tech/seminar",
+            "Career talks from various leaders across different fields of quantum, sharing their journeys and advice for future innovators.",
+        image: PH4,
+        tags: ["Recurring event", "Leadership"],
+        date: "February 2026",
+        dateISO: "2026-02-01",
+        isPast: true,
     },
 
-    // ============================================================
-    // ---- PAST EVENTS ----
-    // ============================================================
+    {
+        slug: "superbloom-festival-superbrain",
+        title: "SUPERBLOOM Festival: SuperBrain",
+        shortDescription:
+            "SuperBrain is the dedicated science, innovation and technology exploration area at the annual SUPERBLOOM Festival in Munich’s Olympiapark.",
+        image: "/images/events/events_festivalssuperbloom.jpg",
+        tags: ["Outreach"],
+        date: "September 2025",
+        dateISO: "2025-09-01",
+        isPast: true,
+        heroDescription:
+            "Explore **science, innovation and technology** at SuperBrain, part of the annual SUPERBLOOM Festival in Munich’s Olympiapark.",
+        keyFacts: {
+            when: "The festival usually takes place during the first week of September.",
+            whatToExpect:
+                "Play Quantum Tic-Tac-Toe and other quantum games with festival visitors—and maybe attend some concerts as well!",
+        },
+    },
+
+    {
+        slug: "quantum-tuesdays",
+        title: "Quantum Tuesdays",
+        shortDescription:
+            "A series of talks at the Deutsches Museum as part of the Quantenträume project.",
+        image: "/images/events/events_QT_Qtuesday.jpg",
+        tags: ["Outreach"],
+        date: "2025",
+        dateISO: "2025-06-01",
+        isPast: true,
+        heroDescription:
+            "A series of talks at the **Deutsches Museum** as part of the Quantenträume outreach project.",
+        keyFacts: {
+            whatToExpect:
+                "Share your quantum knowledge with museum visitors. Short talks, Q&A sessions and quantum games are all welcome.",
+        },
+        gallery: [
+            {
+                src: "/images/events/events_QT_Qtuesday2.jpg",
+                alt: "Quantum Tuesday talk at the Deutsches Museum",
+            },
+        ],
+    },
+
     {
         slug: "qiskit-fall-fest-2025",
         title: "Qiskit Fall Fest 2025",
         shortDescription:
             "Our 2025 Qiskit Fall Fest edition — a compact, beginner-friendly intro to quantum computing with Qiskit, a mini challenge, and a career talk with IBM participation certificates.",
-        image: PH4,
+        image: "/images/events/events_qiskit.png",
         tags: ["Bootcamp", "Community"],
         date: "Friday 7 - Friday 14 November, 2025",
         dateISO: "2025-11-07",
@@ -512,7 +589,7 @@ export const events: EventData[] = [
         title: "Fast Track Innovation Camp — Quantum Sensing for Sustainability",
         shortDescription:
             "Together with Fraunhofer IAO, a one-day workshop exploring how quantum sensing technologies can contribute to sustainability — combining expert input with hands-on interdisciplinary group work.",
-        image: PH2,
+        image: "/images/events/events_stuttgart_innovation.jpg",
         tags: ["Sustainability", "Workshop"],
         date: "2025",
         dateISO: "2025-05-15",
@@ -530,7 +607,7 @@ export const events: EventData[] = [
         title: "Company Visit: qssys",
         shortDescription:
             "We explored qssys, which specializes in quantum communication systems and are experts in QKD component design & development, with consulting for terrestrial and space applications.",
-        image: PH3,
+        image: "/images/events/events_companyvisits_misc_chip.jpg",
         tags: ["Members only", "Company Visit"],
         date: "Monday 23 June, 2025",
         dateISO: "2025-06-23",
@@ -564,7 +641,7 @@ export const events: EventData[] = [
         title: "PushQuantum Hackathon 2024",
         shortDescription:
             "Connecting students and companies through interesting challenges over an exciting weekend — bringing together quantum enthusiasts from different countries and universities to work out innovative solutions.",
-        image: PH1,
+        image: "/images/events/events_hack24.jpg",
         tags: ["Hackathon", "Entrepreneurship"],
         date: "Friday 29 November - Sunday 1 December, 2024",
         dateISO: "2024-11-29",
@@ -730,7 +807,9 @@ export function groupEventsByMonth(
     const groups: Record<string, EventData[]> = {};
     for (const event of eventsList) {
         const d = new Date(event.dateISO);
-        const key = d.toLocaleString("en-US", { month: "long", year: "numeric" });
+        const key = event.date === "To be announced"
+            ? "To be announced"
+            : d.toLocaleString("en-US", { month: "long", year: "numeric" });
         if (!groups[key]) groups[key] = [];
         groups[key].push(event);
     }
