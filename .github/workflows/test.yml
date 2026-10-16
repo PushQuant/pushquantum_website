@@ -14,18 +14,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
-          # Once a package-lock.json is committed you can speed up CI by
-          # uncommenting the next line (requires the lock file to exist):
-          # cache: npm
+          bun-version: 1.3.8
 
       - name: Install dependencies
-        # `npm ci` is preferred (uses the lock file); falls back to `npm install`
-        # if no lock file is present yet.
-        run: npm ci || npm install
+        run: bun install --frozen-lockfile
 
       - name: Run tests
-        run: npm test
+        run: bun run test
