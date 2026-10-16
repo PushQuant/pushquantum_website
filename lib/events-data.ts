@@ -74,10 +74,20 @@ export interface EventData {
     // Key Facts
     keyFacts?: {
         when?: string;
+        whenLink?: {
+            label: string;
+            url: string;
+        };
         where?: string;
         forWhom?: string;
         whatToExpect?: string;
     };
+
+    // Additional photos shown on the event detail page.
+    gallery?: {
+        src: string;
+        alt: string;
+    }[];
 
     // Agenda
     agenda?: AgendaDay[];
@@ -395,15 +405,39 @@ export const events: EventData[] = [
     },
 
     {
-        slug: "seminar-quantum-tuesday",
-        title: "Seminar — Quantum Tuesday",
+        slug: "journal-club-seminar",
+        title: "Journal Club / Seminar",
         shortDescription:
-            "A recurring talk series where PushQuantum members and guests present quantum science and technology topics in an accessible format.",
-        image: "/images/events/events_QT_Qtuesday2.jpg",
+            "An interdisciplinary series of talks discussing experimental and theoretical physics and hosting speakers from both academia and industry.",
+        image: "/images/events/events_seminar1.JPG",
         tags: ["Recurring event", "Outreach"],
-        date: "Recurring event",
+        date: "To be announced",
         dateISO: "2026-02-15",
-        signUpUrl: "https://pushquantum.tech/seminar",
+        heroDescription:
+            "An interdisciplinary series of talks on **Quantum Science and Technology, Condensed Matter, and Quantum Computing**, discussing both experimental and theoretical physics, hosting speakers from both academia and industry.",
+        signUpUrl: "https://pushquantum.substack.com/",
+        keyFacts: {
+            when: "To be announced",
+            whenLink: {
+                label: "Join our newsletter",
+                url: "https://pushquantum.substack.com/",
+            },
+            where: "ZQE Zentrum für Quantum Engineering, Garching-Forschungszentrum",
+            forWhom:
+                "Master’s and PhD students interested in the latest scientific discoveries in quantum.",
+            whatToExpect:
+                "Bi-weekly talks by leading scientists, followed by Q&A and in-depth scientific discussions. Previous speakers include Prof. Monika Aidelsburger, Prof. Rahul Trivedi, Prof. Michael Knapp, Prof. Jan von Delft, and Prof. Johannes Knolle. We offer coffee and snacks for all participants!",
+        },
+        gallery: [
+            {
+                src: "/images/events/events_seminar2.jpg",
+                alt: "Journal Club participants attending a scientific talk",
+            },
+            {
+                src: "/images/events/events_seminar3.jpg",
+                alt: "Speaker presenting at a PushQuantum seminar",
+            },
+        ],
     },
 
     // ============================================================
@@ -706,7 +740,9 @@ export function groupEventsByMonth(
     const groups: Record<string, EventData[]> = {};
     for (const event of eventsList) {
         const d = new Date(event.dateISO);
-        const key = d.toLocaleString("en-US", { month: "long", year: "numeric" });
+        const key = event.date === "To be announced"
+            ? "To be announced"
+            : d.toLocaleString("en-US", { month: "long", year: "numeric" });
         if (!groups[key]) groups[key] = [];
         groups[key].push(event);
     }

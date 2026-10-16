@@ -15,10 +15,11 @@ const events = [
         href: "#",
     },
     {
-        date: { month: "NOV", day: "12" },
-        title: "Leadership Series: Talk by Prof. Ignacio",
-        description: "Career talks of various leaders from different fields of quantum.",
-        href: "#",
+        date: { month: "THR", day: "" },
+        title: "Journal Club / Seminar",
+        description:
+            "An interdisciplinary series of talks discussing experimental and theoretical physics and hosting speakers from both academia and industry.",
+        href: "/events/journal-club-seminar",
     },
 ];
 
@@ -36,7 +37,7 @@ export function EventsSection() {
                         </p>
                     </div>
                     <Link
-                        href="#"
+                        href="/events"
                         className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
                     >
                         See all
@@ -53,7 +54,11 @@ export function EventsSection() {
                             <div className="flex items-start gap-4">
                                 <div className="flex flex-col items-center justify-center w-14 h-14 rounded-lg bg-primary/10 text-primary">
                                     <span className="text-xs font-medium uppercase text-pq-bright-pink">{event.date.month}</span>
-                                    <span className="text-xl font-bold text-pq-bright-pink">{event.date.day}</span>
+                                    {event.date.day && (
+                                        <span className="text-xl font-bold text-pq-bright-pink">
+                                            {event.date.day}
+                                        </span>
+                                    )}
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-foreground font-semibold text-lg">
