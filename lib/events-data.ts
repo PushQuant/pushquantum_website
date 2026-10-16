@@ -4,10 +4,6 @@
 // `events` array following the EventData type structure.
 //
 // NOTE ON IMAGES:
-// All events currently point to the quantum-themed placeholder
-// images in /public/images/events/ (placeholder-quantum-*.png).
-// Swap the `image` field for a real photo whenever one is
-// available — everything else will keep working.
 // ============================================================
 
 export type EventTag =
@@ -122,7 +118,7 @@ export const events: EventData[] = [
         title: "Quantum Entrepreneurship Laboratory",
         shortDescription:
             "A project-based course that brings together students from different backgrounds to work on industry-relevant quantum computing problems and pitch them as commercial products.",
-        image: PH3,
+        image: "/images/events/events_QEL_Demo_Day.webp",
         tags: ["Recurring event", "Entrepreneurship"],
         date: "Each semester",
         dateISO: "2026-04-01",
@@ -195,7 +191,7 @@ export const events: EventData[] = [
         title: "PushQuantum Hackathon 2025",
         shortDescription:
             "One weekend of quantum innovation in Munich. 100+ students and industry experts solving real-world quantum challenges on real quantum hardware.",
-        image: PH1,
+        image: "/images/events/events_hack2025_hack_group - copia.jpg",
         tags: ["Hackathon", "Entrepreneurship"],
         date: "Friday 28 - Sunday 30 November, 2025",
         dateISO: "2025-11-28",
@@ -308,7 +304,7 @@ export const events: EventData[] = [
         title: "Frontier Tech Conference 2025",
         shortDescription:
             "PushQuantum x The Entrepreneurial Group brought together 100+ students, founders, and industry leaders to exchange insights on deep-tech entrepreneurship.",
-        image: PH2,
+        image: "/images/events/events_frontiertech.png",
         tags: ["Conference", "Entrepreneurship"],
         date: "Wednesday 10 December, 2025",
         dateISO: "2025-12-10",
@@ -387,31 +383,11 @@ export const events: EventData[] = [
     },
 
     {
-        slug: "qiskit-bootcamp",
-        title: "Qiskit Bootcamp",
-        shortDescription:
-            "A beginner-friendly, community-driven introduction to quantum computing with Qiskit — talks, workshops, a mini-challenge and a career session, run as part of the global Qiskit Fall Fest.",
-        image: PH1,
-        tags: ["Recurring event", "Bootcamp", "Community"],
-        date: "Recurring event",
-        dateISO: "2026-01-15",
-        heroDescription:
-            "A compact, beginner-friendly and community-driven introduction to quantum computing with **Qiskit**. Get a fast intro, a bite-sized challenge, and a career session — plus time to meet peers.",
-        signUpUrl: "https://pushquantum.tech/qiskit_fall_fest_2025",
-        keyFacts: {
-            forWhom:
-                "Students, researchers, developers and everyone else. Beginner-friendly (basic Python helpful).",
-            whatToExpect:
-                "Quantum & Qiskit 101, networking, a guided mini challenge, and a career talk. IBM participation certificates provided.",
-        },
-    },
-
-    {
         slug: "company-visits",
         title: "Company Visits",
         shortDescription:
             "PushQuantum's Start-up & Company Visit series — explore quantum companies and research centers, hear presentations, and connect with teams over drinks and snacks.",
-        image: PH3,
+        image: "/images/events/events_companyvisits_2.jpg",
         tags: ["Recurring event", "Members only", "Company Visit"],
         date: "Recurring event",
         dateISO: "2026-03-01",
@@ -422,9 +398,9 @@ export const events: EventData[] = [
         slug: "seminar-quantum-tuesday",
         title: "Seminar — Quantum Tuesday",
         shortDescription:
-            "A recurring seminar series where PushQuantum members and guests present quantum science and technology topics in an accessible format.",
-        image: PH2,
-        tags: ["Recurring event", "Community"],
+            "A recurring talk series where PushQuantum members and guests present quantum science and technology topics in an accessible format.",
+        image: "/images/events/events_QT_Qtuesday2.jpg",
+        tags: ["Recurring event", "Outreach"],
         date: "Recurring event",
         dateISO: "2026-02-15",
         signUpUrl: "https://pushquantum.tech/seminar",
@@ -438,7 +414,7 @@ export const events: EventData[] = [
         title: "Qiskit Fall Fest 2025",
         shortDescription:
             "Our 2025 Qiskit Fall Fest edition — a compact, beginner-friendly intro to quantum computing with Qiskit, a mini challenge, and a career talk with IBM participation certificates.",
-        image: PH4,
+        image: "/images/events/events_qiskit.png",
         tags: ["Bootcamp", "Community"],
         date: "Friday 7 - Friday 14 November, 2025",
         dateISO: "2025-11-07",
@@ -512,7 +488,7 @@ export const events: EventData[] = [
         title: "Fast Track Innovation Camp — Quantum Sensing for Sustainability",
         shortDescription:
             "Together with Fraunhofer IAO, a one-day workshop exploring how quantum sensing technologies can contribute to sustainability — combining expert input with hands-on interdisciplinary group work.",
-        image: PH2,
+        image: "/images/events/events_stuttgart_innovation.jpg",
         tags: ["Sustainability", "Workshop"],
         date: "2025",
         dateISO: "2025-05-15",
@@ -530,7 +506,7 @@ export const events: EventData[] = [
         title: "Company Visit: qssys",
         shortDescription:
             "We explored qssys, which specializes in quantum communication systems and are experts in QKD component design & development, with consulting for terrestrial and space applications.",
-        image: PH3,
+        image: "/images/events/events_companyvisits_misc_chip.jpg",
         tags: ["Members only", "Company Visit"],
         date: "Monday 23 June, 2025",
         dateISO: "2025-06-23",
@@ -564,7 +540,7 @@ export const events: EventData[] = [
         title: "PushQuantum Hackathon 2024",
         shortDescription:
             "Connecting students and companies through interesting challenges over an exciting weekend — bringing together quantum enthusiasts from different countries and universities to work out innovative solutions.",
-        image: PH1,
+        image: "/images/events/events_hack24.jpg",
         tags: ["Hackathon", "Entrepreneurship"],
         date: "Friday 29 November - Sunday 1 December, 2024",
         dateISO: "2024-11-29",
