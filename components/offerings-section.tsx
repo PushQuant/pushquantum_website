@@ -10,7 +10,7 @@ const offerings = [
     { title: "Company Visits", href: "#" },
     { title: "Workshops", href: "#" },
     { title: "Qurie - Women in Quantum", href: "#" },
-    { title: "Journal Club", href: "#" },
+    { title: "Journal Club / Seminar", href: "/events/journal-club-seminar" },
 ];
 
 export function OfferingsSection() {
@@ -55,4 +55,3 @@ export function OfferingsSection() {
         </section>
     );
 }
-
