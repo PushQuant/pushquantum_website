@@ -12,7 +12,7 @@ const events = [
         date: { month: "NOV", day: "02" },
         title: "Quantum Entrepreneurship Lab",
         description: "A project-based course uniting students from diverse backgrounds",
-        href: "#",
+        href: "/events/quantum-entrepreneurship-laboratory",
     },
     {
         date: { month: "THR", day: "" },

@@ -3,9 +3,15 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 const offerings = [
-    { title: "Quantum Entrepreneurship Laboratory", href: "#" },
+    {
+        title: "Quantum Entrepreneurship Laboratory",
+        href: "/events/quantum-entrepreneurship-laboratory",
+    },
     { title: "Quantum Hackathon", href: "/hackathon" },
-    { title: "Quantentraeume", href: "#" },
+    {
+        title: "Quantentraeume",
+        href: "https://www.deutsches-museum.de/forschung/forschungsinstitut/projekte/detailseite/quantentraeume#c30272",
+    },
     { title: "International Exchanges", href: "#" },
     { title: "Company Visits", href: "#" },
     { title: "Workshops", href: "#" },
