@@ -53,7 +53,7 @@ export function EventKeyFacts({ event }: { event: EventData }) {
           {facts.whatToExpect && (
             <div>
               <h3 className="font-bold text-pq-dark-purple">What to expect?</h3>
-              <p className="text-gray-600 mt-1">{facts.whatToExpect}</p>
+              <p className="text-gray-600 mt-1 whitespace-pre-line">{facts.whatToExpect}</p>
             </div>
           )}
         </div>

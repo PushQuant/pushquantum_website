@@ -15,7 +15,7 @@ const events = [
         href: "/events/quantum-entrepreneurship-laboratory",
     },
     {
-        date: { month: "THR", day: "" },
+        date: { month: "THR", day: "22" },
         title: "Journal Club / Seminar",
         description:
             "An interdisciplinary series of talks discussing experimental and theoretical physics and hosting speakers from both academia and industry.",

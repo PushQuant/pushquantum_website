@@ -381,43 +381,19 @@ export const events: EventData[] = [
     // ---- UPCOMING / RECURRING OFFERINGS ----
     // ============================================================
     {
-        slug: "leadership-series",
-        title: "Leadership Series",
-        shortDescription:
-            "Career talks from various leaders across different fields of quantum, sharing their journeys and advice for future innovators.",
-        image: PH4,
-        tags: ["Recurring event", "Leadership"],
-        date: "Recurring event",
-        dateISO: "2026-02-01",
-        signUpUrl: "https://pushquantum.tech/leadership-in-quantum",
-    },
-
-    {
-        slug: "company-visits",
-        title: "Company Visits",
-        shortDescription:
-            "PushQuantum's Start-up & Company Visit series — explore quantum companies and research centers, hear presentations, and connect with teams over drinks and snacks.",
-        image: "/images/events/events_companyvisits_2.jpg",
-        tags: ["Recurring event", "Members only", "Company Visit"],
-        date: "Recurring event",
-        dateISO: "2026-03-01",
-        signUpUrl: "https://pushquantum.tech/company-visits",
-    },
-
-    {
         slug: "journal-club-seminar",
         title: "Journal Club / Seminar",
         shortDescription:
             "An interdisciplinary series of talks discussing experimental and theoretical physics and hosting speakers from both academia and industry.",
         image: "/images/events/events_seminar1.JPG",
-        tags: ["Recurring event", "Outreach"],
-        date: "To be announced",
-        dateISO: "2026-02-15",
+        tags: ["Recurring event", "Community"],
+        date: "Thursday 22 October, 2026",
+        dateISO: "2026-10-22",
         heroDescription:
             "An interdisciplinary series of talks on **Quantum Science and Technology, Condensed Matter, and Quantum Computing**, discussing both experimental and theoretical physics, hosting speakers from both academia and industry.",
         signUpUrl: "https://pushquantum.substack.com/",
         keyFacts: {
-            when: "To be announced",
+            when: "Thursday, 22 October 2026",
             whenLink: {
                 label: "Join our newsletter",
                 url: "https://pushquantum.substack.com/",
@@ -443,6 +419,97 @@ export const events: EventData[] = [
     // ============================================================
     // ---- PAST EVENTS ----
     // ============================================================
+    {
+        slug: "school-visits",
+        title: "School Visits",
+        shortDescription:
+            "For our latest school visit, Katharinen-Gymnasium in Ingolstadt welcomed PushQuantum to run a workshop with its 10th- and 11th-grade students.",
+        image: "/images/events/events_schools1.jpg",
+        tags: ["Outreach"],
+        date: "22 May, 2026",
+        dateISO: "2026-05-22",
+        isPast: true,
+        heroDescription:
+            "Katharinen-Gymnasium in Ingolstadt welcomed PushQuantum to run a **quantum workshop** with its 10th- and 11th-grade students.",
+        keyFacts: {
+            whatToExpect:
+                "Share your passion and knowledge of quantum science with schoolchildren and teenagers.\n\nFirst, the students attended an introductory talk on quantum mechanics, where they learned about quantum superposition and entanglement.\n\nLater, they were divided into two groups. One played our traditional quantum games—including Quantum Tic-Tac-Toe, Quantum Labyrinth and Quantum Race 🤸—while the other played qubit bingo and explored different quantum-computing platforms.",
+        },
+        gallery: [
+            {
+                src: "/images/events/events_schools2.jpg",
+                alt: "PushQuantum school workshop about quantum science",
+            },
+        ],
+    },
+
+    {
+        slug: "company-visits",
+        title: "Company Visits",
+        shortDescription:
+            "PushQuantum's Start-up & Company Visit series — explore quantum companies and research centers, hear presentations, and connect with teams over drinks and snacks.",
+        image: "/images/events/events_companyvisits_2.jpg",
+        tags: ["Recurring event", "Members only", "Company Visit"],
+        date: "March 2026",
+        dateISO: "2026-03-01",
+        isPast: true,
+    },
+
+    {
+        slug: "leadership-series",
+        title: "Leadership Series",
+        shortDescription:
+            "Career talks from various leaders across different fields of quantum, sharing their journeys and advice for future innovators.",
+        image: PH4,
+        tags: ["Recurring event", "Leadership"],
+        date: "February 2026",
+        dateISO: "2026-02-01",
+        isPast: true,
+    },
+
+    {
+        slug: "superbloom-festival-superbrain",
+        title: "SUPERBLOOM Festival: SuperBrain",
+        shortDescription:
+            "SuperBrain is the dedicated science, innovation and technology exploration area at the annual SUPERBLOOM Festival in Munich’s Olympiapark.",
+        image: "/images/events/events_festivalssuperbloom.jpg",
+        tags: ["Outreach"],
+        date: "September 2025",
+        dateISO: "2025-09-01",
+        isPast: true,
+        heroDescription:
+            "Explore **science, innovation and technology** at SuperBrain, part of the annual SUPERBLOOM Festival in Munich’s Olympiapark.",
+        keyFacts: {
+            when: "The festival usually takes place during the first week of September.",
+            whatToExpect:
+                "Play Quantum Tic-Tac-Toe and other quantum games with festival visitors—and maybe attend some concerts as well!",
+        },
+    },
+
+    {
+        slug: "quantum-tuesdays",
+        title: "Quantum Tuesdays",
+        shortDescription:
+            "A series of talks at the Deutsches Museum as part of the Quantenträume project.",
+        image: "/images/events/events_QT_Qtuesday.jpg",
+        tags: ["Outreach"],
+        date: "2025",
+        dateISO: "2025-06-01",
+        isPast: true,
+        heroDescription:
+            "A series of talks at the **Deutsches Museum** as part of the Quantenträume outreach project.",
+        keyFacts: {
+            whatToExpect:
+                "Share your quantum knowledge with museum visitors. Short talks, Q&A sessions and quantum games are all welcome.",
+        },
+        gallery: [
+            {
+                src: "/images/events/events_QT_Qtuesday2.jpg",
+                alt: "Quantum Tuesday talk at the Deutsches Museum",
+            },
+        ],
+    },
+
     {
         slug: "qiskit-fall-fest-2025",
         title: "Qiskit Fall Fest 2025",
