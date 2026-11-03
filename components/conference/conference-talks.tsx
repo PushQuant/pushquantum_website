@@ -14,8 +14,8 @@ export function ConferenceTalks() {
                     Talks & abstracts
                 </h2>
                 <p className="text-gray-600 mb-8">
-                    Abstracts below are placeholders and will be updated as speakers
-                    confirm their talks.
+                    Click on a talk to read its abstract. Details of the keynote will
+                    be announced soon.
                 </p>
 
                 <Accordion type="single" collapsible className="w-full">
