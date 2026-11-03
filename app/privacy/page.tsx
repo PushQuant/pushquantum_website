@@ -153,20 +153,20 @@ export default function PrivacyPage() {
                                         dieser Website ist:
                                     </p>
                                     <p className="mt-2">
-                                        Raúl Berganza Gómez
+                                        PushQuantum e.V.
                                         <br />
-                                        Zieblandstr. 14
+                                        Situlistraße 44
                                         <br />
-                                        80798 München
+                                        80939 München
                                         <br />
-                                        Telefon: 0034 648 130 227
+                                        Deutschland
                                         <br />
                                         {"E-Mail: "}
                                         <a
-                                            href="mailto:raul@pushquantum.tech"
+                                            href="mailto:info@pushquantum.tech"
                                             className="text-pq-bright-pink hover:underline"
                                         >
-                                            raul@pushquantum.tech
+                                            info@pushquantum.tech
                                         </a>
                                     </p>
                                 </div>
