@@ -52,6 +52,20 @@ export const challengePartners: ChallengePartner[] = [
         name: "Alice & Bob",
         logo: "/logos/partners/alice_bob/ALICE-ET-BOB.png",
         description: "Hardware company building fault-tolerant quantum computers from cat qubits.",
+        details: [
+            "Alice & Bob is a quantum computing company based in Paris and Boston, working to build the first universal, fault-tolerant quantum computer using cat qubits, which reduce errors at the hardware level.",
+        ],
+        website: "https://alice-bob.com",
+        contacts: [
+            {
+                name: "David Schlegel",
+                role: "Senior Quantum Device Theorist",
+                image: "/images/hackathon/challenge-partners/alice-bob-david.jpg",
+                intro: [
+                    "I am a Senior Quantum Device Theorist at Alice & Bob in the Simulation Model team. I am creating the tools to simulate and optimize the performance of our devices, to allow for a rapid chip design cycle.",
+                ],
+            },
+        ],
     },
     {
         name: "IQM Quantum Computers",
