@@ -2,10 +2,9 @@
 // Data for the Conference deep-dive page
 // (app/hackathon/conference/page.tsx).
 //
-// Talk abstracts are placeholder Lorem Ipsum text — swap them
-// for the real abstracts once speakers confirm them. Everything
-// else (names, affiliations, itinerary slot) comes from
-// 2026_hackathon/2026 Conference & Hackathon Kick-Off.pdf.
+// Talk titles and abstracts as provided by the speakers. The
+// keynote (Cirac) is still TBA. Keep times in sync with the
+// Nov 20 agenda in lib/hackathon-2026-data.ts.
 // ============================================================
 
 export interface ConferenceTalk {
@@ -22,13 +21,6 @@ const LOREM = "TBA";
 export const conferenceTalks: ConferenceTalk[] = [
     {
         time: "9:15 - 10:00",
-        speaker: "Speaker to be confirmed",
-        kind: "Scientific Talk",
-        title: "Topic to be confirmed",
-        abstract: LOREM,
-    },
-    {
-        time: "10:00 - 10:45",
         speaker: "Prof. Dr. Annabelle Bohrdt",
         affiliation: "LMU Munich",
         kind: "Scientific Talk",
@@ -36,6 +28,15 @@ export const conferenceTalks: ConferenceTalk[] = [
             "Neural Quantum State for strongly correlated two-dimensional systems: what we have learned so far",
         abstract:
             "Numerically simulating two-dimensional strongly correlated systems is in general a daunting task. In recent years, neural quantum states have been emerged as a promising new tool: here, the expressivity of a neural network is used to represent the quantum many-body state of interest. In this talk I will introduce the basics of neural quantum states and discuss our current understanding of their capabilities regarding common measures such as entanglement, routes towards interpretability, and possible design choices. I will highlight some of our recent results on applying neural quantum states to strongly interacting electronic systems relevant for unconventional superconductivity, showcasing how we can use this novel technique to simulate increasingly realistic models for quantum materials.",
+    },
+    {
+        time: "10:00 - 10:45",
+        speaker: "Prof. Dr. Andreas Reiserer",
+        affiliation: "TUM",
+        kind: "Scientific Talk",
+        title: "Erbium Dopants for Quantum Networks",
+        abstract:
+            "Despite decades of research into various physical systems, demonstrating a scalable platform for quantum networks and distributed quantum information processing remains an outstanding challenge. In this context, our group investigates the use of erbium dopants in silicon and silicate crystals. This platform offers unique potential for up-scaling: First, erbium dopants can exhibit second-long coherence in a temperature range accessible with 4He cryocoolers. Second, the optical transition of erbium is among the narrowest spectral features ever measured in a solid. Thus, frequency-multiplexed addressing of individual dopants gives access to an unprecedented qubit density. Finally, by embedding dopants in high-quality-factor optical resonators, the optical lifetime can be reduced via the Purcell effect. This has enabled lifetime-limited photon emission in the telecommunications C-band, where optical fiber losses are minimal. This establishes individual erbium dopants as a promising new hardware platform for the upscaling of quantum networks. I will discuss these recent results and give a perspective on the open challenges.",
     },
     {
         time: "11:15 - 12:00",
@@ -51,8 +52,9 @@ export const conferenceTalks: ConferenceTalk[] = [
         speaker: "Prof. Dr. Barbara Kraus",
         affiliation: "TUM",
         kind: "Scientific Talk",
-        title: "TBA",
-        abstract: LOREM,
+        title: "Challenges and Opportunities in Quantum Information Processing",
+        abstract:
+            "Quantum information processing promises fundamentally new ways of computing, communicating, and understanding complex quantum systems. But what are the main obstacles on the way toward useful quantum technologies? In this talk, I will introduce some of the key challenges we currently face and discuss why solving them is both difficult and exciting.",
     },
     {
         time: "16:30 - 17:00",

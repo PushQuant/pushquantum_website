@@ -7,7 +7,7 @@ import { challengePartners, type ChallengePartner } from "@/lib/hackathon-2026-d
 
 function ChallengePartnerCard({ partner }: { partner: ChallengePartner }) {
     const [isOpen, setIsOpen] = useState(false);
-    const hasDetails = Boolean(partner.details || partner.contact);
+    const hasDetails = Boolean(partner.details || partner.contacts?.length);
 
     const summary = (
         <>
@@ -79,24 +79,32 @@ function ChallengePartnerCard({ partner }: { partner: ChallengePartner }) {
                             )}
                         </div>
                     )}
-                    {partner.contact && (
-                        <div className="flex flex-col gap-3">
-                            <div className="relative w-24 h-24 rounded-full overflow-hidden">
-                                <Image
-                                    src={partner.contact.image}
-                                    alt={partner.contact.name}
-                                    fill
-                                    className="object-cover"
-                                    sizes="96px"
-                                />
+                    {partner.contacts?.map((contact) => (
+                        <div key={contact.name} className="flex flex-col gap-3">
+                            <div className="flex items-center gap-4">
+                                <div className="relative w-24 h-24 flex-shrink-0 rounded-full overflow-hidden">
+                                    <Image
+                                        src={contact.image}
+                                        alt={contact.name}
+                                        fill
+                                        className="object-cover"
+                                        sizes="96px"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="font-bold text-pq-dark-purple">{contact.name}</p>
+                                    {contact.role && (
+                                        <p className="text-gray-500 text-xs">{contact.role}</p>
+                                    )}
+                                </div>
                             </div>
-                            {partner.contact.intro.map((paragraph) => (
+                            {contact.intro.map((paragraph) => (
                                 <p key={paragraph} className="text-gray-600 text-sm">
                                     {paragraph}
                                 </p>
                             ))}
                         </div>
-                    )}
+                    ))}
                 </div>
             )}
         </div>
