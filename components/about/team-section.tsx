@@ -61,7 +61,7 @@ const departmentHeads = [
     },
     {
         name: "Jannik Pflieger",
-        role: "Outreach",
+        role: ["Quantum Entrepreneurship Laboratory", "Outreach"],
         image: "/department_leads/Jannik.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "jannik@pushquantum.tech",
@@ -74,11 +74,10 @@ const departmentHeads = [
         email: "elena@pushquantum.tech",
     },
     {
-        name: "Aaron Sander",
-        role: "Quantum Entrepreneurship Laboratory",
-        image: "/department_leads/Aaron.JPG",
+        name: "Vincenzo Di Terlizzi",
+        role: "Outreach",
+        image: "/department_leads/Vincenzo.jpg",
         roleColor: "bg-pq-dark-purple",
-        email: "aaron@pushquantum.tech",
     },
     {
         name: "Yichen Teresa Wang",
@@ -102,15 +101,21 @@ const departmentHeads = [
         email: "leonardo@pushquantum.tech",
     },
     {
+        name: "Juan Yi Pon",
+        role: "Community",
+        image: "/department_leads/JuanYi.jpg",
+        roleColor: "bg-pq-dark-purple",
+    },
+    {
         name: "Felix Schmidt",
-        role: "Head of partnerships",
+        role: "Partnerships",
         image: "/department_leads/Felix.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "felix@pushquantum.tech",
     },
     {
         name: "Niccolò Sfregola",
-        role: "Head of marketing",
+        role: "Marketing",
         image: "/department_leads/Niccolo.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "niccolo@pushquantum.tech",
@@ -122,6 +127,12 @@ const departmentHeads = [
         image: "/department_leads/Naman.jpg",
         roleColor: "bg-pq-dark-purple",
         email: "naman@pushquantum.tech",
+    },
+    {
+        name: "Jan Blessing",
+        role: "Offerings",
+        image: "/department_leads/Jan.jpg",
+        roleColor: "bg-pq-dark-purple",
     },
 ];
 
@@ -151,6 +162,12 @@ const strategicAdvisors = [
 
 // Alumni - Past PushQuantum members
 const alumni = [
+    {
+        name: "Aaron Sander",
+        role: "Quantum Entrepreneurship Laboratory",
+        image: "/department_leads/Aaron.JPG",
+        roleColor: "bg-gray-500",
+    },
     {
         name: "Etay Schneider",
         role: "Offerings",
@@ -343,7 +360,11 @@ function TeamMemberCard({
 }: {
     member: {
         name: string;
-        role: string;
+        /**
+         * One tag, or several. Only the first tag is always shown; any
+         * further tags (e.g. a former department) appear on hover/focus.
+         */
+        role: string | string[];
         image: string;
         roleColor: string;
         email?: string;
@@ -355,12 +376,21 @@ function TeamMemberCard({
 
     const content = (
         <>
-            {/* Role Badge */}
-            <span
-                className={`${member.roleColor} text-white text-xs px-3 py-1 rounded-full mb-3`}
-            >
-                {member.role}
-            </span>
+            {/* Role Badge(s) */}
+            <div className="flex justify-center mb-3">
+                {(Array.isArray(member.role) ? member.role : [member.role]).map((role, idx) => (
+                    <span
+                        key={role}
+                        className={`${member.roleColor} text-white text-xs py-1 rounded-full whitespace-nowrap ${
+                            idx === 0
+                                ? "px-3"
+                                : "overflow-hidden max-w-0 px-0 ml-0 opacity-0 transition-all duration-300 group-hover:max-w-xs group-hover:px-3 group-hover:ml-1.5 group-hover:opacity-100 group-focus-visible:max-w-xs group-focus-visible:px-3 group-focus-visible:ml-1.5 group-focus-visible:opacity-100"
+                        }`}
+                    >
+                        {role}
+                    </span>
+                ))}
+            </div>
 
             {/* Avatar with email hover overlay */}
             <div
@@ -402,7 +432,7 @@ function TeamMemberCard({
     }
 
     return (
-        <div className="flex flex-col items-center text-center">{content}</div>
+        <div className="group flex flex-col items-center text-center">{content}</div>
     );
 }
 
